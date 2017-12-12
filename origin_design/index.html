@@ -1,0 +1,4465 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Trade | Bitcoin</title>
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
+		<script src="slick/jquery-1.11.3.min.js"></script>
+		<script src="slick/slick.js"></script>
+		<script src="js/main.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="head_bar">
+				<div class="containe">
+					<div class="logo">
+						<a href="#"><h2><img src="images/logo.png"></h2></a>
+					</div>
+					<div class="menu">
+						<div class="maindiv">
+							<div class="hamburger">
+								
+							</div>
+						</div>	
+						<ul>							
+							<li><a href="index.html">Trade</a></li>
+							<li class="dropdown"><a class="dropbtn" href="funds.html">Funds</a>
+								<div class="dropdown-content">
+								    <a href="funds.html">Deposit & Withdraw</a>
+								    <a href="withdraw.html">Withdraw history</a>
+								</div>
+							</li>
+							<li class="dropdown"><a class="dropbtn" href="orders.html">Orders</a>
+								<div class="dropdown-content">
+								    <a href="orders.html">Open Orders</a>
+								    <a href="tradehistory.html">Trade history</a>
+								</div>
+							</li>
+							<li class="dropdown"><a class="dropbtn" href="account.html">Account</a>
+								<div class="dropdown-content">
+								    <a href="editprofile.html">Edit profile</a>
+								    <a href="docs.html">Verify account</a>
+								    <a href="changepassword.html">Change password</a>
+								    <a href="apikeys.html">Api keys</a>
+								</div>
+							</li>
+							<li><a id="searchbychar" href="#">User</a></li>
+							<li><a id="log-out" href="#">Logout</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section>
+			<div class="standard">
+				<div class="standard_left">
+					<table width="100%" border="0" class="table coinspair-header" cellspacing="0" cellpadding="0" style="color: #c8c8c6;font-size: 14px;font-weight: bold;">
+					    <tbody>
+					    	<tr style="background-color: #242729;">
+						        <th width="20%" style="padding: 6px;">Coin</th>
+						        <th width="50%" style="padding: 6px;">Price</th>
+						        <th width="30%" style="padding: 6px;">Change</th>
+					    	</tr>
+						</tbody>
+					</table>
+					<div class="left_stand">
+						<table width="100%" border="0" class="table1" cellspacing="0" cellpadding="0" style="padding: 15px 10px;border-bottom: 2px solid #06060638;"> 
+	 						<tbody>
+	 							<tr class="open-orderbook" data-toggle="ttt_btc">
+							    	<td><a style="text-decoration: none;" href="#">TTT/ BTC</a></td>
+							    	<td>0.00003500</td>
+								    <td class="align-right"><span class="red">-6.46%</span></td>
+		      					</tr>
+	  							<tr id="orderbook-1" data-coinpair="ttt_btc" class="coin-orderbook hidden">
+	      							<td colspan="3"></td>
+	  							</tr>
+	  						</tbody>
+	  						<table width="100%" border="0" id="main-tab1" cellspacing="0" cellpadding="0">
+							 	<tbody>
+							  		<tr data-coinpair="btc_usd">
+							      		<td style="display: flex;" >
+							        <div style="width:49.5% !important;margin-bottom: 10px;" class="trdealsb trdealsbnew">
+							        <h1 class="buy">Buy&nbsp;Orders</h1>
+							        <div class="sellandbmain" style="height:auto; overflow:hidden;    clear: both;">
+									<div>
+									<table border="0" bgcolor="" width="100%" cellspacing="0" cellpadding="0" id="trade_history_page" class="table_two" data-item-original-width="637" style="width: 100%;text-transform: uppercase;font-weight: bold;">
+									  	<thead>
+							                <tr style="background-color: rgb(38, 41, 43);">
+												<td width="28%" style="border: none;font-size: 10px;color: #c8c8c6;padding: 5px;">Size</td>
+												<td width="32%" style="border: none;font-size: 10px;color: #c8c8c6;padding: 5px;">Price</td>
+									  		</tr>
+									  	</thead>
+									</table>
+									</div>
+							  		<div style=" overflow-y: auto; width:100%; height:150px;">
+										<table border="0" bgcolor="" width="100%" cellspacing="0" cellpadding="10" id="trade_history_page" class="table_on">
+											<tbody>
+												<tr>
+													<td>0.05</td>
+													<td>14957.58320000</td>
+												</tr>
+												<tr>
+													<td>0.04</td>
+													<td>14954.80000000</td>
+												</tr>
+												<tr>
+													<td>0.27</td>
+													<td>14898.35200004</td>
+												</tr>
+												<tr>
+													<td>1.59</td>
+													<td>14898.35200003</td>
+												</tr>
+												<tr>
+													<td>0.57</td>
+													<td>14898.35200002</td>
+												</tr>
+												<tr>
+													<td>0.05</td>
+													<td>14898.35200000</td>
+												</tr>
+												<tr>
+													<td>0.04</td>
+													<td>14896.00000000</td>
+												</tr>
+												<tr>
+													<td>0.01</td><td>14893.49120000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14888.63040000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14883.76960000</td>
+												</tr>
+												<tr>
+													<td>0.02</td>
+													<td>14881.96416670</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14881.30000000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14878.90880000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14874.04800000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14869.18720000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14864.32640000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14864.04220000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14859.46560000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14857.78000001</td>
+												</tr>
+												<tr>
+													<td>0.02</td>
+													<td>14851.90000000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14849.74400000</td>
+												</tr>
+												<tr>
+													<td>0.16</td>
+													<td>14847.98000008</td>
+												</tr>
+												<tr>
+													<td>0.00</td>
+													<td>14847.98000002</td>
+												</tr>
+												<tr>
+													<td>5.75</td>
+													<td>14847.98000000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14847.00000000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14844.88320000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14840.02240000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14835.16160000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14830.30080000</td>
+												</tr>
+												<tr>
+													<td>1.50</td>
+													<td>14825.44000001</td>
+												</tr>
+												<tr>
+													<td>0.00</td>
+													<td>5000.00000000</td>
+												</tr>
+											</tbody>
+
+									</table>
+									</div>
+							        
+									</div>
+
+							        </div>
+
+							        <div style="width:49.5% !important;margin-left:1%;margin-bottom: 10px;" class="trdealsb trdealsbnew">
+							        <h1 class="sell">Sell&nbsp;Orders</h1>
+							        <div class="sellandbmain" style="height:auto; overflow:hidden;    clear: both;">
+										<div>
+											<table border="0" bgcolor="" width="100%" cellspacing="0" cellpadding="0" id="trade_history_page" class="table_two trdtab" data-item-original-width="637" style="width: 100%;background-color: rgb(38, 41, 43);color: #cccdcc;text-transform: uppercase;   font-weight: bold;">
+											  	<thead>
+												  	<tr style="background-color: rgb(38, 41, 43);">
+														<td width="32%" style="border: none;font-size: 10px;color: #c8c8c6;padding: 5px;"">Price</td>
+										    			<td width="28%" style="border: none;font-size: 10px;color: #c8c8c6;padding: 5px;"">Size</td>
+												  	</tr>
+											  	</thead>
+											</table>
+										</div>
+							  		<div style=" overflow-y: auto; float:left; width:100%; height:150px;">
+										<table border="0" bgcolor="" width="100%" cellspacing="0" cellpadding="10" id="trade_history_page" class="table_on">
+										  	<thead>									  
+										 	</thead>
+											<tbody>
+												<tr>
+													<td>15585.60000000</td>
+													<td>1.16</td>
+												</tr>
+												<tr>
+													<td>15606.00000000</td>
+													<td>0.24</td>
+												</tr>
+												<tr>
+													<td>15606.85680000</td>
+													<td>0.02</td>
+												</tr>
+												<tr>
+													<td>15606.88740000</td>
+													<td>0.02</td>
+												</tr>
+												<tr>
+													<td>15621.30000000</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15636.60000000</td>
+													<td>0.17</td>
+												</tr>
+												<tr>
+													<td>15646.80000000</td>
+													<td>0.26</td>
+												</tr>
+												<tr>
+													<td>15656.08200001</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15662.10000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15667.20000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15669.15840001</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15671.23104000</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15672.29999998</td>
+													<td>0.19</td>
+												</tr>
+												<tr>
+													<td>15672.30000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15672.49762501</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15676.38000000</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15677.31375606</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15677.39999993</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15677.40000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15682.50000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15687.60000000</td>
+													<td>0.02</td>
+												</tr>
+												<tr>
+													<td>15691.75140000</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15692.70000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15694.28100000</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15695.86710000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15697.64302187</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15697.80000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15698.38645920</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15701.00790000</td>
+													<td>0.01</td>
+												</tr>
+											</tbody>
+									</table>
+									</div>
+									</div>
+							        </div>
+							      </td>
+							  	</tr> 
+								</tbody>
+							</table>
+	  					</table>
+	  					<table width="100%" border="0" class="table2" cellspacing="0" cellpadding="0" style="padding: 15px 10px;border-bottom: 2px solid #06060638;"> 
+	 						<tbody>
+	 							<tr class="open-orderbook" data-toggle="ttt_btc">
+							    	<td><a style="text-decoration: none;" href="#">TTT/ BTC</a></td>
+							    	<td>0.00003500</td>
+								    <td class="align-right"><span>-6.46%</span></td>
+		      					</tr>
+	  							<tr id="orderbook-1" data-coinpair="ttt_btc" class="coin-orderbook hidden">
+	      							<td colspan="3"></td>
+	  							</tr>
+	  						</tbody>
+	  						<table width="100%" border="0" id="main-tab2" cellspacing="0" cellpadding="0">
+							 	<tbody>
+							  		<tr data-coinpair="btc_usd">
+							      		<td style="display: flex;" >
+							        <div style="width:49.5% !important;margin-bottom: 10px;" class="trdealsb trdealsbnew">
+							        <h1 class="buy">Buy&nbsp;Orders</h1>
+							        <div class="sellandbmain" style="height:auto; overflow:hidden;    clear: both;">
+									<div>
+									<table border="0" bgcolor="" width="100%" cellspacing="0" cellpadding="0" id="trade_history_page" class="table_two" data-item-original-width="637" style="width: 100%;text-transform: uppercase;font-weight: bold;">
+									  	<thead>
+							                <tr style="background-color: rgb(38, 41, 43);">
+												<td width="28%" style="border: none;font-size: 10px;color: #c8c8c6;padding: 5px;">Size</td>
+												<td width="32%" style="border: none;font-size: 10px;color: #c8c8c6;padding: 5px;">Price</td>
+									  		</tr>
+									  	</thead>
+									</table>
+									</div>
+							  		<div style=" overflow-y: auto; width:100%; height:150px;">
+										<table border="0" bgcolor="" width="100%" cellspacing="0" cellpadding="10" id="trade_history_page" class="table_on">
+											<tbody>
+												<tr>
+													<td>0.05</td>
+													<td>14957.58320000</td>
+												</tr>
+												<tr>
+													<td>0.04</td>
+													<td>14954.80000000</td>
+												</tr>
+												<tr>
+													<td>0.27</td>
+													<td>14898.35200004</td>
+												</tr>
+												<tr>
+													<td>1.59</td>
+													<td>14898.35200003</td>
+												</tr>
+												<tr>
+													<td>0.57</td>
+													<td>14898.35200002</td>
+												</tr>
+												<tr>
+													<td>0.05</td>
+													<td>14898.35200000</td>
+												</tr>
+												<tr>
+													<td>0.04</td>
+													<td>14896.00000000</td>
+												</tr>
+												<tr>
+													<td>0.01</td><td>14893.49120000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14888.63040000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14883.76960000</td>
+												</tr>
+												<tr>
+													<td>0.02</td>
+													<td>14881.96416670</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14881.30000000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14878.90880000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14874.04800000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14869.18720000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14864.32640000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14864.04220000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14859.46560000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14857.78000001</td>
+												</tr>
+												<tr>
+													<td>0.02</td>
+													<td>14851.90000000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14849.74400000</td>
+												</tr>
+												<tr>
+													<td>0.16</td>
+													<td>14847.98000008</td>
+												</tr>
+												<tr>
+													<td>0.00</td>
+													<td>14847.98000002</td>
+												</tr>
+												<tr>
+													<td>5.75</td>
+													<td>14847.98000000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14847.00000000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14844.88320000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14840.02240000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14835.16160000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14830.30080000</td>
+												</tr>
+												<tr>
+													<td>1.50</td>
+													<td>14825.44000001</td>
+												</tr>
+												<tr>
+													<td>0.00</td>
+													<td>5000.00000000</td>
+												</tr>
+											</tbody>
+
+									</table>
+									</div>
+							        
+									</div>
+
+							        </div>
+
+							        <div style="width:49.5% !important;margin-left:1%;margin-bottom: 10px;" class="trdealsb trdealsbnew">
+							        <h1 class="sell">Sell&nbsp;Orders</h1>
+							        <div class="sellandbmain" style="height:auto; overflow:hidden;    clear: both;">
+										<div>
+											<table border="0" bgcolor="" width="100%" cellspacing="0" cellpadding="0" id="trade_history_page" class="table_two trdtab" data-item-original-width="637" style="width: 100%;background-color: rgb(38, 41, 43);color: #cccdcc;text-transform: uppercase;   font-weight: bold;">
+											  	<thead>
+												  	<tr style="background-color: rgb(38, 41, 43);">
+														<td width="32%" style="border: none;font-size: 10px;color: #c8c8c6;padding: 5px;"">Price</td>
+										    			<td width="28%" style="border: none;font-size: 10px;color: #c8c8c6;padding: 5px;"">Size</td>
+												  	</tr>
+											  	</thead>
+											</table>
+										</div>
+							  		<div style=" overflow-y: auto; float:left; width:100%; height:150px;">
+										<table border="0" bgcolor="" width="100%" cellspacing="0" cellpadding="10" id="trade_history_page" class="table_on">
+										  	<thead>									  
+										 	</thead>
+											<tbody>
+												<tr>
+													<td>15585.60000000</td>
+													<td>1.16</td>
+												</tr>
+												<tr>
+													<td>15606.00000000</td>
+													<td>0.24</td>
+												</tr>
+												<tr>
+													<td>15606.85680000</td>
+													<td>0.02</td>
+												</tr>
+												<tr>
+													<td>15606.88740000</td>
+													<td>0.02</td>
+												</tr>
+												<tr>
+													<td>15621.30000000</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15636.60000000</td>
+													<td>0.17</td>
+												</tr>
+												<tr>
+													<td>15646.80000000</td>
+													<td>0.26</td>
+												</tr>
+												<tr>
+													<td>15656.08200001</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15662.10000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15667.20000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15669.15840001</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15671.23104000</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15672.29999998</td>
+													<td>0.19</td>
+												</tr>
+												<tr>
+													<td>15672.30000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15672.49762501</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15676.38000000</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15677.31375606</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15677.39999993</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15677.40000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15682.50000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15687.60000000</td>
+													<td>0.02</td>
+												</tr>
+												<tr>
+													<td>15691.75140000</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15692.70000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15694.28100000</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15695.86710000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15697.64302187</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15697.80000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15698.38645920</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15701.00790000</td>
+													<td>0.01</td>
+												</tr>
+											</tbody>
+									</table>
+									</div>
+									</div>
+							        </div>
+							      </td>
+							  	</tr> 
+								</tbody>
+							</table>
+	  					</table>
+	  					<table width="100%" border="0" class="table3" cellspacing="0" cellpadding="0" style="padding: 15px 10px;border-bottom: 2px solid #06060638;"> 
+	 						<tbody>
+	 							<tr class="open-orderbook" data-toggle="ttt_btc">
+							    	<td><a style="text-decoration: none;" href="#">TTT/ BTC</a></td>
+							    	<td>0.00003500</td>
+								    <td class="align-right"><span>-6.46%</span></td>
+		      					</tr>
+	  							<tr id="orderbook-1" data-coinpair="ttt_btc" class="coin-orderbook hidden">
+	      							<td colspan="3"></td>
+	  							</tr>
+	  						</tbody>
+	  						<table width="100%" border="0" id="main-tab3" cellspacing="0" cellpadding="0">
+							 	<tbody>
+							  		<tr data-coinpair="btc_usd">
+							      		<td style="display: flex;" >
+							        <div style="width:49.5% !important;margin-bottom: 10px;" class="trdealsb trdealsbnew">
+							        <h1 class="buy">Buy&nbsp;Orders</h1>
+							        <div class="sellandbmain" style="height:auto; overflow:hidden;    clear: both;">
+									<div>
+									<table border="0" bgcolor="" width="100%" cellspacing="0" cellpadding="0" id="trade_history_page" class="table_two" data-item-original-width="637" style="width: 100%;text-transform: uppercase;font-weight: bold;">
+									  	<thead>
+							                <tr style="background-color: rgb(38, 41, 43);">
+												<td width="28%" style="border: none;font-size: 10px;color: #c8c8c6;padding: 5px;">Size</td>
+												<td width="32%" style="border: none;font-size: 10px;color: #c8c8c6;padding: 5px;">Price</td>
+									  		</tr>
+									  	</thead>
+									</table>
+									</div>
+							  		<div style=" overflow-y: auto; width:100%; height:150px;">
+										<table border="0" bgcolor="" width="100%" cellspacing="0" cellpadding="10" id="trade_history_page" class="table_on">
+											<tbody>
+												<tr>
+													<td>0.05</td>
+													<td>14957.58320000</td>
+												</tr>
+												<tr>
+													<td>0.04</td>
+													<td>14954.80000000</td>
+												</tr>
+												<tr>
+													<td>0.27</td>
+													<td>14898.35200004</td>
+												</tr>
+												<tr>
+													<td>1.59</td>
+													<td>14898.35200003</td>
+												</tr>
+												<tr>
+													<td>0.57</td>
+													<td>14898.35200002</td>
+												</tr>
+												<tr>
+													<td>0.05</td>
+													<td>14898.35200000</td>
+												</tr>
+												<tr>
+													<td>0.04</td>
+													<td>14896.00000000</td>
+												</tr>
+												<tr>
+													<td>0.01</td><td>14893.49120000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14888.63040000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14883.76960000</td>
+												</tr>
+												<tr>
+													<td>0.02</td>
+													<td>14881.96416670</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14881.30000000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14878.90880000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14874.04800000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14869.18720000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14864.32640000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14864.04220000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14859.46560000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14857.78000001</td>
+												</tr>
+												<tr>
+													<td>0.02</td>
+													<td>14851.90000000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14849.74400000</td>
+												</tr>
+												<tr>
+													<td>0.16</td>
+													<td>14847.98000008</td>
+												</tr>
+												<tr>
+													<td>0.00</td>
+													<td>14847.98000002</td>
+												</tr>
+												<tr>
+													<td>5.75</td>
+													<td>14847.98000000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14847.00000000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14844.88320000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14840.02240000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14835.16160000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14830.30080000</td>
+												</tr>
+												<tr>
+													<td>1.50</td>
+													<td>14825.44000001</td>
+												</tr>
+												<tr>
+													<td>0.00</td>
+													<td>5000.00000000</td>
+												</tr>
+											</tbody>
+
+									</table>
+									</div>
+							        
+									</div>
+
+							        </div>
+
+							        <div style="width:49.5% !important;margin-left:1%;margin-bottom: 10px;" class="trdealsb trdealsbnew">
+							        <h1 class="sell">Sell&nbsp;Orders</h1>
+							        <div class="sellandbmain" style="height:auto; overflow:hidden;    clear: both;">
+										<div>
+											<table border="0" bgcolor="" width="100%" cellspacing="0" cellpadding="0" id="trade_history_page" class="table_two trdtab" data-item-original-width="637" style="width: 100%;background-color: rgb(38, 41, 43);color: #cccdcc;text-transform: uppercase;   font-weight: bold;">
+											  	<thead>
+												  	<tr style="background-color: rgb(38, 41, 43);">
+														<td width="32%" style="border: none;font-size: 10px;color: #c8c8c6;padding: 5px;"">Price</td>
+										    			<td width="28%" style="border: none;font-size: 10px;color: #c8c8c6;padding: 5px;"">Size</td>
+												  	</tr>
+											  	</thead>
+											</table>
+										</div>
+							  		<div style=" overflow-y: auto; float:left; width:100%; height:150px;">
+										<table border="0" bgcolor="" width="100%" cellspacing="0" cellpadding="10" id="trade_history_page" class="table_on">
+										  	<thead>									  
+										 	</thead>
+											<tbody>
+												<tr>
+													<td>15585.60000000</td>
+													<td>1.16</td>
+												</tr>
+												<tr>
+													<td>15606.00000000</td>
+													<td>0.24</td>
+												</tr>
+												<tr>
+													<td>15606.85680000</td>
+													<td>0.02</td>
+												</tr>
+												<tr>
+													<td>15606.88740000</td>
+													<td>0.02</td>
+												</tr>
+												<tr>
+													<td>15621.30000000</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15636.60000000</td>
+													<td>0.17</td>
+												</tr>
+												<tr>
+													<td>15646.80000000</td>
+													<td>0.26</td>
+												</tr>
+												<tr>
+													<td>15656.08200001</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15662.10000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15667.20000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15669.15840001</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15671.23104000</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15672.29999998</td>
+													<td>0.19</td>
+												</tr>
+												<tr>
+													<td>15672.30000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15672.49762501</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15676.38000000</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15677.31375606</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15677.39999993</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15677.40000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15682.50000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15687.60000000</td>
+													<td>0.02</td>
+												</tr>
+												<tr>
+													<td>15691.75140000</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15692.70000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15694.28100000</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15695.86710000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15697.64302187</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15697.80000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15698.38645920</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15701.00790000</td>
+													<td>0.01</td>
+												</tr>
+											</tbody>
+									</table>
+									</div>
+									</div>
+							        </div>
+							      </td>
+							  	</tr> 
+								</tbody>
+							</table>
+	  					</table>
+	  					<table width="100%" border="0" class="table4" cellspacing="0" cellpadding="0" style="padding: 15px 10px;border-bottom: 2px solid #06060638;"> 
+	 						<tbody>
+	 							<tr class="open-orderbook" data-toggle="ttt_btc">
+							    	<td><a style="text-decoration: none;" href="#">TTT/ BTC</a></td>
+							    	<td>0.00003500</td>
+								    <td class="align-right"><span class="red">-6.46%</span></td>
+		      					</tr>
+	  							<tr id="orderbook-1" data-coinpair="ttt_btc" class="coin-orderbook hidden">
+	      							<td colspan="3"></td>
+	  							</tr>
+	  						</tbody>	
+	  						<table width="100%" border="0" id="main-tab4" cellspacing="0" cellpadding="0">
+							 	<tbody>
+							  		<tr data-coinpair="btc_usd">
+							      		<td style="display: flex;" >
+							        <div style="width:49.5% !important;margin-bottom: 10px;" class="trdealsb trdealsbnew">
+							        <h1 class="buy">Buy&nbsp;Orders</h1>
+							        <div class="sellandbmain" style="height:auto; overflow:hidden;    clear: both;">
+									<div>
+									<table border="0" bgcolor="" width="100%" cellspacing="0" cellpadding="0" id="trade_history_page" class="table_two" data-item-original-width="637" style="width: 100%;text-transform: uppercase;font-weight: bold;">
+									  	<thead>
+							                <tr style="background-color: rgb(38, 41, 43);">
+												<td width="28%" style="border: none;font-size: 10px;color: #c8c8c6;padding: 5px;">Size</td>
+												<td width="32%" style="border: none;font-size: 10px;color: #c8c8c6;padding: 5px;">Price</td>
+									  		</tr>
+									  	</thead>
+									</table>
+									</div>
+							  		<div style=" overflow-y: auto; width:100%; height:150px;">
+										<table border="0" bgcolor="" width="100%" cellspacing="0" cellpadding="10" id="trade_history_page" class="table_on">
+											<tbody>
+												<tr>
+													<td>0.05</td>
+													<td>14957.58320000</td>
+												</tr>
+												<tr>
+													<td>0.04</td>
+													<td>14954.80000000</td>
+												</tr>
+												<tr>
+													<td>0.27</td>
+													<td>14898.35200004</td>
+												</tr>
+												<tr>
+													<td>1.59</td>
+													<td>14898.35200003</td>
+												</tr>
+												<tr>
+													<td>0.57</td>
+													<td>14898.35200002</td>
+												</tr>
+												<tr>
+													<td>0.05</td>
+													<td>14898.35200000</td>
+												</tr>
+												<tr>
+													<td>0.04</td>
+													<td>14896.00000000</td>
+												</tr>
+												<tr>
+													<td>0.01</td><td>14893.49120000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14888.63040000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14883.76960000</td>
+												</tr>
+												<tr>
+													<td>0.02</td>
+													<td>14881.96416670</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14881.30000000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14878.90880000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14874.04800000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14869.18720000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14864.32640000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14864.04220000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14859.46560000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14857.78000001</td>
+												</tr>
+												<tr>
+													<td>0.02</td>
+													<td>14851.90000000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14849.74400000</td>
+												</tr>
+												<tr>
+													<td>0.16</td>
+													<td>14847.98000008</td>
+												</tr>
+												<tr>
+													<td>0.00</td>
+													<td>14847.98000002</td>
+												</tr>
+												<tr>
+													<td>5.75</td>
+													<td>14847.98000000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14847.00000000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14844.88320000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14840.02240000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14835.16160000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14830.30080000</td>
+												</tr>
+												<tr>
+													<td>1.50</td>
+													<td>14825.44000001</td>
+												</tr>
+												<tr>
+													<td>0.00</td>
+													<td>5000.00000000</td>
+												</tr>
+											</tbody>
+
+									</table>
+									</div>
+							        
+									</div>
+
+							        </div>
+
+							        <div style="width:49.5% !important;margin-left:1%;margin-bottom: 10px;" class="trdealsb trdealsbnew">
+							        <h1 class="sell">Sell&nbsp;Orders</h1>
+							        <div class="sellandbmain" style="height:auto; overflow:hidden;    clear: both;">
+										<div>
+											<table border="0" bgcolor="" width="100%" cellspacing="0" cellpadding="0" id="trade_history_page" class="table_two trdtab" data-item-original-width="637" style="width: 100%;background-color: rgb(38, 41, 43);color: #cccdcc;text-transform: uppercase;   font-weight: bold;">
+											  	<thead>
+												  	<tr style="background-color: rgb(38, 41, 43);">
+														<td width="32%" style="border: none;font-size: 10px;color: #c8c8c6;padding: 5px;"">Price</td>
+										    			<td width="28%" style="border: none;font-size: 10px;color: #c8c8c6;padding: 5px;"">Size</td>
+												  	</tr>
+											  	</thead>
+											</table>
+										</div>
+							  		<div style=" overflow-y: auto; float:left; width:100%; height:150px;">
+										<table border="0" bgcolor="" width="100%" cellspacing="0" cellpadding="10" id="trade_history_page" class="table_on">
+										  	<thead>									  
+										 	</thead>
+											<tbody>
+												<tr>
+													<td>15585.60000000</td>
+													<td>1.16</td>
+												</tr>
+												<tr>
+													<td>15606.00000000</td>
+													<td>0.24</td>
+												</tr>
+												<tr>
+													<td>15606.85680000</td>
+													<td>0.02</td>
+												</tr>
+												<tr>
+													<td>15606.88740000</td>
+													<td>0.02</td>
+												</tr>
+												<tr>
+													<td>15621.30000000</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15636.60000000</td>
+													<td>0.17</td>
+												</tr>
+												<tr>
+													<td>15646.80000000</td>
+													<td>0.26</td>
+												</tr>
+												<tr>
+													<td>15656.08200001</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15662.10000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15667.20000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15669.15840001</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15671.23104000</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15672.29999998</td>
+													<td>0.19</td>
+												</tr>
+												<tr>
+													<td>15672.30000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15672.49762501</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15676.38000000</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15677.31375606</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15677.39999993</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15677.40000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15682.50000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15687.60000000</td>
+													<td>0.02</td>
+												</tr>
+												<tr>
+													<td>15691.75140000</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15692.70000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15694.28100000</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15695.86710000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15697.64302187</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15697.80000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15698.38645920</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15701.00790000</td>
+													<td>0.01</td>
+												</tr>
+											</tbody>
+									</table>
+									</div>
+									</div>
+							        </div>
+							      </td>
+							  	</tr> 
+								</tbody>
+							</table>  						
+	  					</table>
+	  					<table width="100%" border="0" class="table5" cellspacing="0" cellpadding="0" style="padding: 15px 10px;border-bottom: 2px solid #06060638;"> 
+	 						<tbody>
+	 							<tr class="open-orderbook" data-toggle="ttt_btc">
+							    	<td><a style="text-decoration: none;" href="#">TTT/ BTC</a></td>
+							    	<td>0.00003500</td>
+								    <td class="align-right"><span class="red">-6.46%</span></td>
+		      					</tr>
+	  							<tr id="orderbook-1" data-coinpair="ttt_btc" class="coin-orderbook hidden">
+	      							<td colspan="3"></td>
+	  							</tr>
+	  						</tbody>
+	  						<table width="100%" border="0" id="main-tab5" cellspacing="0" cellpadding="0">
+							 	<tbody>
+							  		<tr data-coinpair="btc_usd">
+							      		<td style="display: flex;" >
+							        <div style="width:49.5% !important;margin-bottom: 10px;" class="trdealsb trdealsbnew">
+							        <h1 class="buy">Buy&nbsp;Orders</h1>
+							        <div class="sellandbmain" style="height:auto; overflow:hidden;    clear: both;">
+									<div>
+									<table border="0" bgcolor="" width="100%" cellspacing="0" cellpadding="0" id="trade_history_page" class="table_two" data-item-original-width="637" style="width: 100%;text-transform: uppercase;font-weight: bold;">
+									  	<thead>
+							                <tr style="background-color: rgb(38, 41, 43);">
+												<td width="28%" style="border: none;font-size: 10px;color: #c8c8c6;padding: 5px;">Size</td>
+												<td width="32%" style="border: none;font-size: 10px;color: #c8c8c6;padding: 5px;">Price</td>
+									  		</tr>
+									  	</thead>
+									</table>
+									</div>
+							  		<div style=" overflow-y: auto; width:100%; height:150px;">
+										<table border="0" bgcolor="" width="100%" cellspacing="0" cellpadding="10" id="trade_history_page" class="table_on">
+											<tbody>
+												<tr>
+													<td>0.05</td>
+													<td>14957.58320000</td>
+												</tr>
+												<tr>
+													<td>0.04</td>
+													<td>14954.80000000</td>
+												</tr>
+												<tr>
+													<td>0.27</td>
+													<td>14898.35200004</td>
+												</tr>
+												<tr>
+													<td>1.59</td>
+													<td>14898.35200003</td>
+												</tr>
+												<tr>
+													<td>0.57</td>
+													<td>14898.35200002</td>
+												</tr>
+												<tr>
+													<td>0.05</td>
+													<td>14898.35200000</td>
+												</tr>
+												<tr>
+													<td>0.04</td>
+													<td>14896.00000000</td>
+												</tr>
+												<tr>
+													<td>0.01</td><td>14893.49120000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14888.63040000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14883.76960000</td>
+												</tr>
+												<tr>
+													<td>0.02</td>
+													<td>14881.96416670</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14881.30000000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14878.90880000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14874.04800000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14869.18720000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14864.32640000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14864.04220000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14859.46560000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14857.78000001</td>
+												</tr>
+												<tr>
+													<td>0.02</td>
+													<td>14851.90000000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14849.74400000</td>
+												</tr>
+												<tr>
+													<td>0.16</td>
+													<td>14847.98000008</td>
+												</tr>
+												<tr>
+													<td>0.00</td>
+													<td>14847.98000002</td>
+												</tr>
+												<tr>
+													<td>5.75</td>
+													<td>14847.98000000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14847.00000000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14844.88320000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14840.02240000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14835.16160000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14830.30080000</td>
+												</tr>
+												<tr>
+													<td>1.50</td>
+													<td>14825.44000001</td>
+												</tr>
+												<tr>
+													<td>0.00</td>
+													<td>5000.00000000</td>
+												</tr>
+											</tbody>
+
+									</table>
+									</div>
+							        
+									</div>
+
+							        </div>
+
+							        <div style="width:49.5% !important;margin-left:1%;margin-bottom: 10px;" class="trdealsb trdealsbnew">
+							        <h1 class="sell">Sell&nbsp;Orders</h1>
+							        <div class="sellandbmain" style="height:auto; overflow:hidden;    clear: both;">
+										<div>
+											<table border="0" bgcolor="" width="100%" cellspacing="0" cellpadding="0" id="trade_history_page" class="table_two trdtab" data-item-original-width="637" style="width: 100%;background-color: rgb(38, 41, 43);color: #cccdcc;text-transform: uppercase;   font-weight: bold;">
+											  	<thead>
+												  	<tr style="background-color: rgb(38, 41, 43);">
+														<td width="32%" style="border: none;font-size: 10px;color: #c8c8c6;padding: 5px;"">Price</td>
+										    			<td width="28%" style="border: none;font-size: 10px;color: #c8c8c6;padding: 5px;"">Size</td>
+												  	</tr>
+											  	</thead>
+											</table>
+										</div>
+							  		<div style=" overflow-y: auto; float:left; width:100%; height:150px;">
+										<table border="0" bgcolor="" width="100%" cellspacing="0" cellpadding="10" id="trade_history_page" class="table_on">
+										  	<thead>									  
+										 	</thead>
+											<tbody>
+												<tr>
+													<td>15585.60000000</td>
+													<td>1.16</td>
+												</tr>
+												<tr>
+													<td>15606.00000000</td>
+													<td>0.24</td>
+												</tr>
+												<tr>
+													<td>15606.85680000</td>
+													<td>0.02</td>
+												</tr>
+												<tr>
+													<td>15606.88740000</td>
+													<td>0.02</td>
+												</tr>
+												<tr>
+													<td>15621.30000000</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15636.60000000</td>
+													<td>0.17</td>
+												</tr>
+												<tr>
+													<td>15646.80000000</td>
+													<td>0.26</td>
+												</tr>
+												<tr>
+													<td>15656.08200001</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15662.10000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15667.20000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15669.15840001</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15671.23104000</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15672.29999998</td>
+													<td>0.19</td>
+												</tr>
+												<tr>
+													<td>15672.30000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15672.49762501</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15676.38000000</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15677.31375606</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15677.39999993</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15677.40000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15682.50000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15687.60000000</td>
+													<td>0.02</td>
+												</tr>
+												<tr>
+													<td>15691.75140000</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15692.70000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15694.28100000</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15695.86710000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15697.64302187</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15697.80000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15698.38645920</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15701.00790000</td>
+													<td>0.01</td>
+												</tr>
+											</tbody>
+									</table>
+									</div>
+									</div>
+							        </div>
+							      </td>
+							  	</tr> 
+								</tbody>
+							</table>
+	  					</table>
+	  					<table width="100%" border="0" class="table6" cellspacing="0" cellpadding="0" style="padding: 15px 10px;border-bottom: 2px solid #06060638;"> 
+	 						<tbody>
+	 							<tr class="open-orderbook" data-toggle="ttt_btc">
+							    	<td><a style="text-decoration: none;" href="#">TTT/ BTC</a></td>
+							    	<td>0.00003500</td>
+								    <td class="align-right"><span class="red">-6.46%</span></td>
+		      					</tr>
+	  							<tr id="orderbook-1" data-coinpair="ttt_btc" class="coin-orderbook hidden">
+	      							<td colspan="3"></td>
+	  							</tr>
+	  						</tbody>
+	  						<table width="100%" border="0" id="main-tab6" cellspacing="0" cellpadding="0">
+							 	<tbody>
+							  		<tr data-coinpair="btc_usd">
+							      		<td style="display: flex;" >
+							        <div style="width:49.5% !important;margin-bottom: 10px;" class="trdealsb trdealsbnew">
+							        <h1 class="buy">Buy&nbsp;Orders</h1>
+							        <div class="sellandbmain" style="height:auto; overflow:hidden;    clear: both;">
+									<div>
+									<table border="0" bgcolor="" width="100%" cellspacing="0" cellpadding="0" id="trade_history_page" class="table_two" data-item-original-width="637" style="width: 100%;text-transform: uppercase;font-weight: bold;">
+									  	<thead>
+							                <tr style="background-color: rgb(38, 41, 43);">
+												<td width="28%" style="border: none;font-size: 10px;color: #c8c8c6;padding: 5px;">Size</td>
+												<td width="32%" style="border: none;font-size: 10px;color: #c8c8c6;padding: 5px;">Price</td>
+									  		</tr>
+									  	</thead>
+									</table>
+									</div>
+							  		<div style=" overflow-y: auto; width:100%; height:150px;">
+										<table border="0" bgcolor="" width="100%" cellspacing="0" cellpadding="10" id="trade_history_page" class="table_on">
+											<tbody>
+												<tr>
+													<td>0.05</td>
+													<td>14957.58320000</td>
+												</tr>
+												<tr>
+													<td>0.04</td>
+													<td>14954.80000000</td>
+												</tr>
+												<tr>
+													<td>0.27</td>
+													<td>14898.35200004</td>
+												</tr>
+												<tr>
+													<td>1.59</td>
+													<td>14898.35200003</td>
+												</tr>
+												<tr>
+													<td>0.57</td>
+													<td>14898.35200002</td>
+												</tr>
+												<tr>
+													<td>0.05</td>
+													<td>14898.35200000</td>
+												</tr>
+												<tr>
+													<td>0.04</td>
+													<td>14896.00000000</td>
+												</tr>
+												<tr>
+													<td>0.01</td><td>14893.49120000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14888.63040000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14883.76960000</td>
+												</tr>
+												<tr>
+													<td>0.02</td>
+													<td>14881.96416670</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14881.30000000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14878.90880000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14874.04800000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14869.18720000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14864.32640000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14864.04220000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14859.46560000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14857.78000001</td>
+												</tr>
+												<tr>
+													<td>0.02</td>
+													<td>14851.90000000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14849.74400000</td>
+												</tr>
+												<tr>
+													<td>0.16</td>
+													<td>14847.98000008</td>
+												</tr>
+												<tr>
+													<td>0.00</td>
+													<td>14847.98000002</td>
+												</tr>
+												<tr>
+													<td>5.75</td>
+													<td>14847.98000000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14847.00000000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14844.88320000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14840.02240000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14835.16160000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14830.30080000</td>
+												</tr>
+												<tr>
+													<td>1.50</td>
+													<td>14825.44000001</td>
+												</tr>
+												<tr>
+													<td>0.00</td>
+													<td>5000.00000000</td>
+												</tr>
+											</tbody>
+
+									</table>
+									</div>
+							        
+									</div>
+
+							        </div>
+
+							        <div style="width:49.5% !important;margin-left:1%;margin-bottom: 10px;" class="trdealsb trdealsbnew">
+							        <h1 class="sell">Sell&nbsp;Orders</h1>
+							        <div class="sellandbmain" style="height:auto; overflow:hidden;    clear: both;">
+										<div>
+											<table border="0" bgcolor="" width="100%" cellspacing="0" cellpadding="0" id="trade_history_page" class="table_two trdtab" data-item-original-width="637" style="width: 100%;background-color: rgb(38, 41, 43);color: #cccdcc;text-transform: uppercase;   font-weight: bold;">
+											  	<thead>
+												  	<tr style="background-color: rgb(38, 41, 43);">
+														<td width="32%" style="border: none;font-size: 10px;color: #c8c8c6;padding: 5px;"">Price</td>
+										    			<td width="28%" style="border: none;font-size: 10px;color: #c8c8c6;padding: 5px;"">Size</td>
+												  	</tr>
+											  	</thead>
+											</table>
+										</div>
+							  		<div style=" overflow-y: auto; float:left; width:100%; height:150px;">
+										<table border="0" bgcolor="" width="100%" cellspacing="0" cellpadding="10" id="trade_history_page" class="table_on">
+										  	<thead>									  
+										 	</thead>
+											<tbody>
+												<tr>
+													<td>15585.60000000</td>
+													<td>1.16</td>
+												</tr>
+												<tr>
+													<td>15606.00000000</td>
+													<td>0.24</td>
+												</tr>
+												<tr>
+													<td>15606.85680000</td>
+													<td>0.02</td>
+												</tr>
+												<tr>
+													<td>15606.88740000</td>
+													<td>0.02</td>
+												</tr>
+												<tr>
+													<td>15621.30000000</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15636.60000000</td>
+													<td>0.17</td>
+												</tr>
+												<tr>
+													<td>15646.80000000</td>
+													<td>0.26</td>
+												</tr>
+												<tr>
+													<td>15656.08200001</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15662.10000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15667.20000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15669.15840001</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15671.23104000</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15672.29999998</td>
+													<td>0.19</td>
+												</tr>
+												<tr>
+													<td>15672.30000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15672.49762501</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15676.38000000</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15677.31375606</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15677.39999993</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15677.40000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15682.50000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15687.60000000</td>
+													<td>0.02</td>
+												</tr>
+												<tr>
+													<td>15691.75140000</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15692.70000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15694.28100000</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15695.86710000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15697.64302187</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15697.80000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15698.38645920</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15701.00790000</td>
+													<td>0.01</td>
+												</tr>
+											</tbody>
+									</table>
+									</div>
+									</div>
+							        </div>
+							      </td>
+							  	</tr> 
+								</tbody>
+							</table>
+	  					</table>
+	  					<table width="100%" border="0" class="table7" cellspacing="0" cellpadding="0" style="padding: 15px 10px;border-bottom: 2px solid #06060638;"> 
+	 						<tbody>
+	 							<tr class="open-orderbook" data-toggle="ttt_btc">
+							    	<td><a style="text-decoration: none;" href="#">TTT/ BTC</a></td>
+							    	<td>0.00003500</td>
+								    <td class="align-right"><span class="red">-6.46%</span></td>
+		      					</tr>
+	  							<tr id="orderbook-1" data-coinpair="ttt_btc" class="coin-orderbook hidden">
+	      							<td colspan="3"></td>
+	  							</tr>
+	  						</tbody>
+	  						<table width="100%" border="0" id="main-tab7" cellspacing="0" cellpadding="0">
+							 	<tbody>
+							  		<tr data-coinpair="btc_usd">
+							      		<td style="display: flex;" >
+							        <div style="width:49.5% !important;margin-bottom: 10px;" class="trdealsb trdealsbnew">
+							        <h1 class="buy">Buy&nbsp;Orders</h1>
+							        <div class="sellandbmain" style="height:auto; overflow:hidden;    clear: both;">
+									<div>
+									<table border="0" bgcolor="" width="100%" cellspacing="0" cellpadding="0" id="trade_history_page" class="table_two" data-item-original-width="637" style="width: 100%;text-transform: uppercase;font-weight: bold;">
+									  	<thead>
+							                <tr style="background-color: rgb(38, 41, 43);">
+												<td width="28%" style="border: none;font-size: 10px;color: #c8c8c6;padding: 5px;">Size</td>
+												<td width="32%" style="border: none;font-size: 10px;color: #c8c8c6;padding: 5px;">Price</td>
+									  		</tr>
+									  	</thead>
+									</table>
+									</div>
+							  		<div style=" overflow-y: auto; width:100%; height:150px;">
+										<table border="0" bgcolor="" width="100%" cellspacing="0" cellpadding="10" id="trade_history_page" class="table_on">
+											<tbody>
+												<tr>
+													<td>0.05</td>
+													<td>14957.58320000</td>
+												</tr>
+												<tr>
+													<td>0.04</td>
+													<td>14954.80000000</td>
+												</tr>
+												<tr>
+													<td>0.27</td>
+													<td>14898.35200004</td>
+												</tr>
+												<tr>
+													<td>1.59</td>
+													<td>14898.35200003</td>
+												</tr>
+												<tr>
+													<td>0.57</td>
+													<td>14898.35200002</td>
+												</tr>
+												<tr>
+													<td>0.05</td>
+													<td>14898.35200000</td>
+												</tr>
+												<tr>
+													<td>0.04</td>
+													<td>14896.00000000</td>
+												</tr>
+												<tr>
+													<td>0.01</td><td>14893.49120000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14888.63040000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14883.76960000</td>
+												</tr>
+												<tr>
+													<td>0.02</td>
+													<td>14881.96416670</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14881.30000000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14878.90880000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14874.04800000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14869.18720000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14864.32640000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14864.04220000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14859.46560000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14857.78000001</td>
+												</tr>
+												<tr>
+													<td>0.02</td>
+													<td>14851.90000000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14849.74400000</td>
+												</tr>
+												<tr>
+													<td>0.16</td>
+													<td>14847.98000008</td>
+												</tr>
+												<tr>
+													<td>0.00</td>
+													<td>14847.98000002</td>
+												</tr>
+												<tr>
+													<td>5.75</td>
+													<td>14847.98000000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14847.00000000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14844.88320000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14840.02240000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14835.16160000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14830.30080000</td>
+												</tr>
+												<tr>
+													<td>1.50</td>
+													<td>14825.44000001</td>
+												</tr>
+												<tr>
+													<td>0.00</td>
+													<td>5000.00000000</td>
+												</tr>
+											</tbody>
+
+									</table>
+									</div>
+							        
+									</div>
+
+							        </div>
+
+							        <div style="width:49.5% !important;margin-left:1%;margin-bottom: 10px;" class="trdealsb trdealsbnew">
+							        <h1 class="sell">Sell&nbsp;Orders</h1>
+							        <div class="sellandbmain" style="height:auto; overflow:hidden;    clear: both;">
+										<div>
+											<table border="0" bgcolor="" width="100%" cellspacing="0" cellpadding="0" id="trade_history_page" class="table_two trdtab" data-item-original-width="637" style="width: 100%;background-color: rgb(38, 41, 43);color: #cccdcc;text-transform: uppercase;   font-weight: bold;">
+											  	<thead>
+												  	<tr style="background-color: rgb(38, 41, 43);">
+														<td width="32%" style="border: none;font-size: 10px;color: #c8c8c6;padding: 5px;"">Price</td>
+										    			<td width="28%" style="border: none;font-size: 10px;color: #c8c8c6;padding: 5px;"">Size</td>
+												  	</tr>
+											  	</thead>
+											</table>
+										</div>
+							  		<div style=" overflow-y: auto; float:left; width:100%; height:150px;">
+										<table border="0" bgcolor="" width="100%" cellspacing="0" cellpadding="10" id="trade_history_page" class="table_on">
+										  	<thead>									  
+										 	</thead>
+											<tbody>
+												<tr>
+													<td>15585.60000000</td>
+													<td>1.16</td>
+												</tr>
+												<tr>
+													<td>15606.00000000</td>
+													<td>0.24</td>
+												</tr>
+												<tr>
+													<td>15606.85680000</td>
+													<td>0.02</td>
+												</tr>
+												<tr>
+													<td>15606.88740000</td>
+													<td>0.02</td>
+												</tr>
+												<tr>
+													<td>15621.30000000</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15636.60000000</td>
+													<td>0.17</td>
+												</tr>
+												<tr>
+													<td>15646.80000000</td>
+													<td>0.26</td>
+												</tr>
+												<tr>
+													<td>15656.08200001</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15662.10000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15667.20000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15669.15840001</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15671.23104000</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15672.29999998</td>
+													<td>0.19</td>
+												</tr>
+												<tr>
+													<td>15672.30000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15672.49762501</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15676.38000000</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15677.31375606</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15677.39999993</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15677.40000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15682.50000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15687.60000000</td>
+													<td>0.02</td>
+												</tr>
+												<tr>
+													<td>15691.75140000</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15692.70000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15694.28100000</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15695.86710000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15697.64302187</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15697.80000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15698.38645920</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15701.00790000</td>
+													<td>0.01</td>
+												</tr>
+											</tbody>
+									</table>
+									</div>
+									</div>
+							        </div>
+							      </td>
+							  	</tr> 
+								</tbody>
+							</table>
+	  					</table>
+	  					<table width="100%" border="0" class="table8" cellspacing="0" cellpadding="0" style="padding: 15px 10px;border-bottom: 2px solid #06060638;"> 
+	 						<tbody>
+	 							<tr class="open-orderbook" data-toggle="ttt_btc">
+							    	<td><a style="text-decoration: none;" href="#">TTT/ BTC</a></td>
+							    	<td>0.00003500</td>
+								    <td class="align-right"><span class="red">-6.46%</span></td>
+		      					</tr>
+	  							<tr id="orderbook-1" data-coinpair="ttt_btc" class="coin-orderbook hidden">
+	      							<td colspan="3"></td>
+	  							</tr>
+	  						</tbody>
+	  						<table width="100%" border="0" id="main-tab8" cellspacing="0" cellpadding="0">
+							 	<tbody>
+							  		<tr data-coinpair="btc_usd">
+							      		<td style="display: flex;" >
+							        <div style="width:49.5% !important;margin-bottom: 10px;" class="trdealsb trdealsbnew">
+							        <h1 class="buy">Buy&nbsp;Orders</h1>
+							        <div class="sellandbmain" style="height:auto; overflow:hidden;    clear: both;">
+									<div>
+									<table border="0" bgcolor="" width="100%" cellspacing="0" cellpadding="0" id="trade_history_page" class="table_two" data-item-original-width="637" style="width: 100%;text-transform: uppercase;font-weight: bold;">
+									  	<thead>
+							                <tr style="background-color: rgb(38, 41, 43);">
+												<td width="28%" style="border: none;font-size: 10px;color: #c8c8c6;padding: 5px;">Size</td>
+												<td width="32%" style="border: none;font-size: 10px;color: #c8c8c6;padding: 5px;">Price</td>
+									  		</tr>
+									  	</thead>
+									</table>
+									</div>
+							  		<div style=" overflow-y: auto; width:100%; height:150px;">
+										<table border="0" bgcolor="" width="100%" cellspacing="0" cellpadding="10" id="trade_history_page" class="table_on">
+											<tbody>
+												<tr>
+													<td>0.05</td>
+													<td>14957.58320000</td>
+												</tr>
+												<tr>
+													<td>0.04</td>
+													<td>14954.80000000</td>
+												</tr>
+												<tr>
+													<td>0.27</td>
+													<td>14898.35200004</td>
+												</tr>
+												<tr>
+													<td>1.59</td>
+													<td>14898.35200003</td>
+												</tr>
+												<tr>
+													<td>0.57</td>
+													<td>14898.35200002</td>
+												</tr>
+												<tr>
+													<td>0.05</td>
+													<td>14898.35200000</td>
+												</tr>
+												<tr>
+													<td>0.04</td>
+													<td>14896.00000000</td>
+												</tr>
+												<tr>
+													<td>0.01</td><td>14893.49120000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14888.63040000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14883.76960000</td>
+												</tr>
+												<tr>
+													<td>0.02</td>
+													<td>14881.96416670</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14881.30000000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14878.90880000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14874.04800000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14869.18720000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14864.32640000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14864.04220000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14859.46560000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14857.78000001</td>
+												</tr>
+												<tr>
+													<td>0.02</td>
+													<td>14851.90000000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14849.74400000</td>
+												</tr>
+												<tr>
+													<td>0.16</td>
+													<td>14847.98000008</td>
+												</tr>
+												<tr>
+													<td>0.00</td>
+													<td>14847.98000002</td>
+												</tr>
+												<tr>
+													<td>5.75</td>
+													<td>14847.98000000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14847.00000000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14844.88320000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14840.02240000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14835.16160000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14830.30080000</td>
+												</tr>
+												<tr>
+													<td>1.50</td>
+													<td>14825.44000001</td>
+												</tr>
+												<tr>
+													<td>0.00</td>
+													<td>5000.00000000</td>
+												</tr>
+											</tbody>
+
+									</table>
+									</div>
+							        
+									</div>
+
+							        </div>
+
+							        <div style="width:49.5% !important;margin-left:1%;margin-bottom: 10px;" class="trdealsb trdealsbnew">
+							        <h1 class="sell">Sell&nbsp;Orders</h1>
+							        <div class="sellandbmain" style="height:auto; overflow:hidden;    clear: both;">
+										<div>
+											<table border="0" bgcolor="" width="100%" cellspacing="0" cellpadding="0" id="trade_history_page" class="table_two trdtab" data-item-original-width="637" style="width: 100%;background-color: rgb(38, 41, 43);color: #cccdcc;text-transform: uppercase;   font-weight: bold;">
+											  	<thead>
+												  	<tr style="background-color: rgb(38, 41, 43);">
+														<td width="32%" style="border: none;font-size: 10px;color: #c8c8c6;padding: 5px;"">Price</td>
+										    			<td width="28%" style="border: none;font-size: 10px;color: #c8c8c6;padding: 5px;"">Size</td>
+												  	</tr>
+											  	</thead>
+											</table>
+										</div>
+							  		<div style=" overflow-y: auto; float:left; width:100%; height:150px;">
+										<table border="0" bgcolor="" width="100%" cellspacing="0" cellpadding="10" id="trade_history_page" class="table_on">
+										  	<thead>									  
+										 	</thead>
+											<tbody>
+												<tr>
+													<td>15585.60000000</td>
+													<td>1.16</td>
+												</tr>
+												<tr>
+													<td>15606.00000000</td>
+													<td>0.24</td>
+												</tr>
+												<tr>
+													<td>15606.85680000</td>
+													<td>0.02</td>
+												</tr>
+												<tr>
+													<td>15606.88740000</td>
+													<td>0.02</td>
+												</tr>
+												<tr>
+													<td>15621.30000000</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15636.60000000</td>
+													<td>0.17</td>
+												</tr>
+												<tr>
+													<td>15646.80000000</td>
+													<td>0.26</td>
+												</tr>
+												<tr>
+													<td>15656.08200001</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15662.10000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15667.20000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15669.15840001</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15671.23104000</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15672.29999998</td>
+													<td>0.19</td>
+												</tr>
+												<tr>
+													<td>15672.30000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15672.49762501</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15676.38000000</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15677.31375606</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15677.39999993</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15677.40000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15682.50000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15687.60000000</td>
+													<td>0.02</td>
+												</tr>
+												<tr>
+													<td>15691.75140000</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15692.70000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15694.28100000</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15695.86710000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15697.64302187</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15697.80000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15698.38645920</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15701.00790000</td>
+													<td>0.01</td>
+												</tr>
+											</tbody>
+									</table>
+									</div>
+									</div>
+							        </div>
+							      </td>
+							  	</tr> 
+								</tbody>
+							</table>
+	  					</table>
+	  					<table width="100%" border="0" class="table9" cellspacing="0" cellpadding="0" style="padding: 15px 10px;border-bottom: 2px solid #06060638;"> 
+	 						<tbody>
+	 							<tr class="open-orderbook" data-toggle="ttt_btc">
+							    	<td><a style="text-decoration: none;" href="#">TTT/ BTC</a></td>
+							    	<td>0.00003500</td>
+								    <td class="align-right"><span>-6.46%</span></td>
+		      					</tr>
+	  							<tr id="orderbook-1" data-coinpair="ttt_btc" class="coin-orderbook hidden">
+	      							<td colspan="3"></td>
+	  							</tr>
+	  						</tbody>
+	  						<table width="100%" border="0" id="main-tab9" cellspacing="0" cellpadding="0">
+							 	<tbody>
+							  		<tr data-coinpair="btc_usd">
+							      		<td style="display: flex;" >
+							        <div style="width:49.5% !important;margin-bottom: 10px;" class="trdealsb trdealsbnew">
+							        <h1 class="buy">Buy&nbsp;Orders</h1>
+							        <div class="sellandbmain" style="height:auto; overflow:hidden;    clear: both;">
+									<div>
+									<table border="0" bgcolor="" width="100%" cellspacing="0" cellpadding="0" id="trade_history_page" class="table_two" data-item-original-width="637" style="width: 100%;text-transform: uppercase;font-weight: bold;">
+									  	<thead>
+							                <tr style="background-color: rgb(38, 41, 43);">
+												<td width="28%" style="border: none;font-size: 10px;color: #c8c8c6;padding: 5px;">Size</td>
+												<td width="32%" style="border: none;font-size: 10px;color: #c8c8c6;padding: 5px;">Price</td>
+									  		</tr>
+									  	</thead>
+									</table>
+									</div>
+							  		<div style=" overflow-y: auto; width:100%; height:150px;">
+										<table border="0" bgcolor="" width="100%" cellspacing="0" cellpadding="10" id="trade_history_page" class="table_on">
+											<tbody>
+												<tr>
+													<td>0.05</td>
+													<td>14957.58320000</td>
+												</tr>
+												<tr>
+													<td>0.04</td>
+													<td>14954.80000000</td>
+												</tr>
+												<tr>
+													<td>0.27</td>
+													<td>14898.35200004</td>
+												</tr>
+												<tr>
+													<td>1.59</td>
+													<td>14898.35200003</td>
+												</tr>
+												<tr>
+													<td>0.57</td>
+													<td>14898.35200002</td>
+												</tr>
+												<tr>
+													<td>0.05</td>
+													<td>14898.35200000</td>
+												</tr>
+												<tr>
+													<td>0.04</td>
+													<td>14896.00000000</td>
+												</tr>
+												<tr>
+													<td>0.01</td><td>14893.49120000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14888.63040000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14883.76960000</td>
+												</tr>
+												<tr>
+													<td>0.02</td>
+													<td>14881.96416670</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14881.30000000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14878.90880000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14874.04800000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14869.18720000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14864.32640000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14864.04220000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14859.46560000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14857.78000001</td>
+												</tr>
+												<tr>
+													<td>0.02</td>
+													<td>14851.90000000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14849.74400000</td>
+												</tr>
+												<tr>
+													<td>0.16</td>
+													<td>14847.98000008</td>
+												</tr>
+												<tr>
+													<td>0.00</td>
+													<td>14847.98000002</td>
+												</tr>
+												<tr>
+													<td>5.75</td>
+													<td>14847.98000000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14847.00000000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14844.88320000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14840.02240000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14835.16160000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14830.30080000</td>
+												</tr>
+												<tr>
+													<td>1.50</td>
+													<td>14825.44000001</td>
+												</tr>
+												<tr>
+													<td>0.00</td>
+													<td>5000.00000000</td>
+												</tr>
+											</tbody>
+
+									</table>
+									</div>
+							        
+									</div>
+
+							        </div>
+
+							        <div style="width:49.5% !important;margin-left:1%;margin-bottom: 10px;" class="trdealsb trdealsbnew">
+							        <h1 class="sell">Sell&nbsp;Orders</h1>
+							        <div class="sellandbmain" style="height:auto; overflow:hidden;    clear: both;">
+										<div>
+											<table border="0" bgcolor="" width="100%" cellspacing="0" cellpadding="0" id="trade_history_page" class="table_two trdtab" data-item-original-width="637" style="width: 100%;background-color: rgb(38, 41, 43);color: #cccdcc;text-transform: uppercase;   font-weight: bold;">
+											  	<thead>
+												  	<tr style="background-color: rgb(38, 41, 43);">
+														<td width="32%" style="border: none;font-size: 10px;color: #c8c8c6;padding: 5px;"">Price</td>
+										    			<td width="28%" style="border: none;font-size: 10px;color: #c8c8c6;padding: 5px;"">Size</td>
+												  	</tr>
+											  	</thead>
+											</table>
+										</div>
+							  		<div style=" overflow-y: auto; float:left; width:100%; height:150px;">
+										<table border="0" bgcolor="" width="100%" cellspacing="0" cellpadding="10" id="trade_history_page" class="table_on">
+										  	<thead>									  
+										 	</thead>
+											<tbody>
+												<tr>
+													<td>15585.60000000</td>
+													<td>1.16</td>
+												</tr>
+												<tr>
+													<td>15606.00000000</td>
+													<td>0.24</td>
+												</tr>
+												<tr>
+													<td>15606.85680000</td>
+													<td>0.02</td>
+												</tr>
+												<tr>
+													<td>15606.88740000</td>
+													<td>0.02</td>
+												</tr>
+												<tr>
+													<td>15621.30000000</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15636.60000000</td>
+													<td>0.17</td>
+												</tr>
+												<tr>
+													<td>15646.80000000</td>
+													<td>0.26</td>
+												</tr>
+												<tr>
+													<td>15656.08200001</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15662.10000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15667.20000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15669.15840001</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15671.23104000</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15672.29999998</td>
+													<td>0.19</td>
+												</tr>
+												<tr>
+													<td>15672.30000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15672.49762501</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15676.38000000</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15677.31375606</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15677.39999993</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15677.40000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15682.50000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15687.60000000</td>
+													<td>0.02</td>
+												</tr>
+												<tr>
+													<td>15691.75140000</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15692.70000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15694.28100000</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15695.86710000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15697.64302187</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15697.80000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15698.38645920</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15701.00790000</td>
+													<td>0.01</td>
+												</tr>
+											</tbody>
+									</table>
+									</div>
+									</div>
+							        </div>
+							      </td>
+							  	</tr> 
+								</tbody>
+							</table>
+	  					</table>
+	  					<table width="100%" border="0" class="table10" cellspacing="0" cellpadding="0" style="padding: 15px 10px;border-bottom: 2px solid #06060638;"> 
+	 						<tbody>
+	 							<tr class="open-orderbook" data-toggle="ttt_btc">
+							    	<td><a style="text-decoration: none;" href="#">TTT/ BTC</a></td>
+							    	<td>0.00003500</td>
+								    <td class="align-right"><span class="red">-6.46%</span></td>
+		      					</tr>
+	  							<tr id="orderbook-1" data-coinpair="ttt_btc" class="coin-orderbook hidden">
+	      							<td colspan="3"></td>
+	  							</tr>
+	  						</tbody>
+	  						<table width="100%" border="0" id="main-tab10" cellspacing="0" cellpadding="0">
+							 	<tbody>
+							  		<tr data-coinpair="btc_usd">
+							      		<td style="display: flex;" >
+							        <div style="width:49.5% !important;margin-bottom: 10px;" class="trdealsb trdealsbnew">
+							        <h1 class="buy">Buy&nbsp;Orders</h1>
+							        <div class="sellandbmain" style="height:auto; overflow:hidden;    clear: both;">
+									<div>
+									<table border="0" bgcolor="" width="100%" cellspacing="0" cellpadding="0" id="trade_history_page" class="table_two" data-item-original-width="637" style="width: 100%;text-transform: uppercase;font-weight: bold;">
+									  	<thead>
+							                <tr style="background-color: rgb(38, 41, 43);">
+												<td width="28%" style="border: none;font-size: 10px;color: #c8c8c6;padding: 5px;">Size</td>
+												<td width="32%" style="border: none;font-size: 10px;color: #c8c8c6;padding: 5px;">Price</td>
+									  		</tr>
+									  	</thead>
+									</table>
+									</div>
+							  		<div style=" overflow-y: auto; width:100%; height:150px;">
+										<table border="0" bgcolor="" width="100%" cellspacing="0" cellpadding="10" id="trade_history_page" class="table_on">
+											<tbody>
+												<tr>
+													<td>0.05</td>
+													<td>14957.58320000</td>
+												</tr>
+												<tr>
+													<td>0.04</td>
+													<td>14954.80000000</td>
+												</tr>
+												<tr>
+													<td>0.27</td>
+													<td>14898.35200004</td>
+												</tr>
+												<tr>
+													<td>1.59</td>
+													<td>14898.35200003</td>
+												</tr>
+												<tr>
+													<td>0.57</td>
+													<td>14898.35200002</td>
+												</tr>
+												<tr>
+													<td>0.05</td>
+													<td>14898.35200000</td>
+												</tr>
+												<tr>
+													<td>0.04</td>
+													<td>14896.00000000</td>
+												</tr>
+												<tr>
+													<td>0.01</td><td>14893.49120000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14888.63040000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14883.76960000</td>
+												</tr>
+												<tr>
+													<td>0.02</td>
+													<td>14881.96416670</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14881.30000000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14878.90880000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14874.04800000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14869.18720000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14864.32640000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14864.04220000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14859.46560000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14857.78000001</td>
+												</tr>
+												<tr>
+													<td>0.02</td>
+													<td>14851.90000000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14849.74400000</td>
+												</tr>
+												<tr>
+													<td>0.16</td>
+													<td>14847.98000008</td>
+												</tr>
+												<tr>
+													<td>0.00</td>
+													<td>14847.98000002</td>
+												</tr>
+												<tr>
+													<td>5.75</td>
+													<td>14847.98000000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14847.00000000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14844.88320000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14840.02240000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14835.16160000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14830.30080000</td>
+												</tr>
+												<tr>
+													<td>1.50</td>
+													<td>14825.44000001</td>
+												</tr>
+												<tr>
+													<td>0.00</td>
+													<td>5000.00000000</td>
+												</tr>
+											</tbody>
+
+									</table>
+									</div>
+							        
+									</div>
+
+							        </div>
+
+							        <div style="width:49.5% !important;margin-left:1%;margin-bottom: 10px;" class="trdealsb trdealsbnew">
+							        <h1 class="sell">Sell&nbsp;Orders</h1>
+							        <div class="sellandbmain" style="height:auto; overflow:hidden;    clear: both;">
+										<div>
+											<table border="0" bgcolor="" width="100%" cellspacing="0" cellpadding="0" id="trade_history_page" class="table_two trdtab" data-item-original-width="637" style="width: 100%;background-color: rgb(38, 41, 43);color: #cccdcc;text-transform: uppercase;   font-weight: bold;">
+											  	<thead>
+												  	<tr style="background-color: rgb(38, 41, 43);">
+														<td width="32%" style="border: none;font-size: 10px;color: #c8c8c6;padding: 5px;"">Price</td>
+										    			<td width="28%" style="border: none;font-size: 10px;color: #c8c8c6;padding: 5px;"">Size</td>
+												  	</tr>
+											  	</thead>
+											</table>
+										</div>
+							  		<div style=" overflow-y: auto; float:left; width:100%; height:150px;">
+										<table border="0" bgcolor="" width="100%" cellspacing="0" cellpadding="10" id="trade_history_page" class="table_on">
+										  	<thead>									  
+										 	</thead>
+											<tbody>
+												<tr>
+													<td>15585.60000000</td>
+													<td>1.16</td>
+												</tr>
+												<tr>
+													<td>15606.00000000</td>
+													<td>0.24</td>
+												</tr>
+												<tr>
+													<td>15606.85680000</td>
+													<td>0.02</td>
+												</tr>
+												<tr>
+													<td>15606.88740000</td>
+													<td>0.02</td>
+												</tr>
+												<tr>
+													<td>15621.30000000</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15636.60000000</td>
+													<td>0.17</td>
+												</tr>
+												<tr>
+													<td>15646.80000000</td>
+													<td>0.26</td>
+												</tr>
+												<tr>
+													<td>15656.08200001</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15662.10000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15667.20000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15669.15840001</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15671.23104000</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15672.29999998</td>
+													<td>0.19</td>
+												</tr>
+												<tr>
+													<td>15672.30000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15672.49762501</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15676.38000000</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15677.31375606</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15677.39999993</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15677.40000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15682.50000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15687.60000000</td>
+													<td>0.02</td>
+												</tr>
+												<tr>
+													<td>15691.75140000</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15692.70000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15694.28100000</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15695.86710000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15697.64302187</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15697.80000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15698.38645920</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15701.00790000</td>
+													<td>0.01</td>
+												</tr>
+											</tbody>
+									</table>
+									</div>
+									</div>
+							        </div>
+							      </td>
+							  	</tr> 
+								</tbody>
+							</table>
+	  					</table>
+	  					<table width="100%" border="0" class="table11" cellspacing="0" cellpadding="0" style="padding: 15px 10px;border-bottom: 2px solid #06060638;"> 
+	 						<tbody>
+	 							<tr class="open-orderbook" data-toggle="ttt_btc">
+							    	<td><a style="text-decoration: none;" href="#">TTT/ BTC</a></td>
+							    	<td>0.00003500</td>
+								    <td class="align-right"><span class="red">-6.46%</span></td>
+		      					</tr>
+	  							<tr id="orderbook-1" data-coinpair="ttt_btc" class="coin-orderbook hidden">
+	      							<td colspan="3"></td>
+	  							</tr>
+	  						</tbody>
+	  						<table width="100%" border="0" id="main-tab11" cellspacing="0" cellpadding="0">
+							 	<tbody>
+							  		<tr data-coinpair="btc_usd">
+							      		<td style="display: flex;" >
+							        <div style="width:49.5% !important;margin-bottom: 10px;" class="trdealsb trdealsbnew">
+							        <h1 class="buy">Buy&nbsp;Orders</h1>
+							        <div class="sellandbmain" style="height:auto; overflow:hidden;    clear: both;">
+									<div>
+									<table border="0" bgcolor="" width="100%" cellspacing="0" cellpadding="0" id="trade_history_page" class="table_two" data-item-original-width="637" style="width: 100%;text-transform: uppercase;font-weight: bold;">
+									  	<thead>
+							                <tr style="background-color: rgb(38, 41, 43);">
+												<td width="28%" style="border: none;font-size: 10px;color: #c8c8c6;padding: 5px;">Size</td>
+												<td width="32%" style="border: none;font-size: 10px;color: #c8c8c6;padding: 5px;">Price</td>
+									  		</tr>
+									  	</thead>
+									</table>
+									</div>
+							  		<div style=" overflow-y: auto; width:100%; height:150px;">
+										<table border="0" bgcolor="" width="100%" cellspacing="0" cellpadding="10" id="trade_history_page" class="table_on">
+											<tbody>
+												<tr>
+													<td>0.05</td>
+													<td>14957.58320000</td>
+												</tr>
+												<tr>
+													<td>0.04</td>
+													<td>14954.80000000</td>
+												</tr>
+												<tr>
+													<td>0.27</td>
+													<td>14898.35200004</td>
+												</tr>
+												<tr>
+													<td>1.59</td>
+													<td>14898.35200003</td>
+												</tr>
+												<tr>
+													<td>0.57</td>
+													<td>14898.35200002</td>
+												</tr>
+												<tr>
+													<td>0.05</td>
+													<td>14898.35200000</td>
+												</tr>
+												<tr>
+													<td>0.04</td>
+													<td>14896.00000000</td>
+												</tr>
+												<tr>
+													<td>0.01</td><td>14893.49120000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14888.63040000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14883.76960000</td>
+												</tr>
+												<tr>
+													<td>0.02</td>
+													<td>14881.96416670</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14881.30000000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14878.90880000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14874.04800000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14869.18720000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14864.32640000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14864.04220000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14859.46560000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14857.78000001</td>
+												</tr>
+												<tr>
+													<td>0.02</td>
+													<td>14851.90000000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14849.74400000</td>
+												</tr>
+												<tr>
+													<td>0.16</td>
+													<td>14847.98000008</td>
+												</tr>
+												<tr>
+													<td>0.00</td>
+													<td>14847.98000002</td>
+												</tr>
+												<tr>
+													<td>5.75</td>
+													<td>14847.98000000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14847.00000000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14844.88320000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14840.02240000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14835.16160000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14830.30080000</td>
+												</tr>
+												<tr>
+													<td>1.50</td>
+													<td>14825.44000001</td>
+												</tr>
+												<tr>
+													<td>0.00</td>
+													<td>5000.00000000</td>
+												</tr>
+											</tbody>
+
+									</table>
+									</div>
+							        
+									</div>
+
+							        </div>
+
+							        <div style="width:49.5% !important;margin-left:1%;margin-bottom: 10px;" class="trdealsb trdealsbnew">
+							        <h1 class="sell">Sell&nbsp;Orders</h1>
+							        <div class="sellandbmain" style="height:auto; overflow:hidden;    clear: both;">
+										<div>
+											<table border="0" bgcolor="" width="100%" cellspacing="0" cellpadding="0" id="trade_history_page" class="table_two trdtab" data-item-original-width="637" style="width: 100%;background-color: rgb(38, 41, 43);color: #cccdcc;text-transform: uppercase;   font-weight: bold;">
+											  	<thead>
+												  	<tr style="background-color: rgb(38, 41, 43);">
+														<td width="32%" style="border: none;font-size: 10px;color: #c8c8c6;padding: 5px;"">Price</td>
+										    			<td width="28%" style="border: none;font-size: 10px;color: #c8c8c6;padding: 5px;"">Size</td>
+												  	</tr>
+											  	</thead>
+											</table>
+										</div>
+							  		<div style=" overflow-y: auto; float:left; width:100%; height:150px;">
+										<table border="0" bgcolor="" width="100%" cellspacing="0" cellpadding="10" id="trade_history_page" class="table_on">
+										  	<thead>									  
+										 	</thead>
+											<tbody>
+												<tr>
+													<td>15585.60000000</td>
+													<td>1.16</td>
+												</tr>
+												<tr>
+													<td>15606.00000000</td>
+													<td>0.24</td>
+												</tr>
+												<tr>
+													<td>15606.85680000</td>
+													<td>0.02</td>
+												</tr>
+												<tr>
+													<td>15606.88740000</td>
+													<td>0.02</td>
+												</tr>
+												<tr>
+													<td>15621.30000000</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15636.60000000</td>
+													<td>0.17</td>
+												</tr>
+												<tr>
+													<td>15646.80000000</td>
+													<td>0.26</td>
+												</tr>
+												<tr>
+													<td>15656.08200001</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15662.10000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15667.20000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15669.15840001</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15671.23104000</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15672.29999998</td>
+													<td>0.19</td>
+												</tr>
+												<tr>
+													<td>15672.30000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15672.49762501</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15676.38000000</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15677.31375606</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15677.39999993</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15677.40000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15682.50000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15687.60000000</td>
+													<td>0.02</td>
+												</tr>
+												<tr>
+													<td>15691.75140000</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15692.70000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15694.28100000</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15695.86710000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15697.64302187</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15697.80000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15698.38645920</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15701.00790000</td>
+													<td>0.01</td>
+												</tr>
+											</tbody>
+									</table>
+									</div>
+									</div>
+							        </div>
+							      </td>
+							  	</tr> 
+								</tbody>
+							</table>
+	  					</table>
+	  					<table width="100%" border="0" class="table12" cellspacing="0" cellpadding="0" style="padding: 15px 10px;border-bottom: 2px solid #06060638;"> 
+	 						<tbody>
+	 							<tr class="open-orderbook" data-toggle="ttt_btc">
+							    	<td><a style="text-decoration: none;" href="#">TTT/ BTC</a></td>
+							    	<td>0.00003500</td>
+								    <td class="align-right"><span class="red">-6.46%</span></td>
+		      					</tr>
+	  							<tr id="orderbook-1" data-coinpair="ttt_btc" class="coin-orderbook hidden">
+	      							<td colspan="3"></td>
+	  							</tr>
+	  						</tbody>
+	  						<table width="100%" border="0" id="main-tab12" cellspacing="0" cellpadding="0">
+							 	<tbody>
+							  		<tr data-coinpair="btc_usd">
+							      		<td style="display: flex;" >
+							        <div style="width:49.5% !important;margin-bottom: 10px;" class="trdealsb trdealsbnew">
+							        <h1 class="buy">Buy&nbsp;Orders</h1>
+							        <div class="sellandbmain" style="height:auto; overflow:hidden;    clear: both;">
+									<div>
+									<table border="0" bgcolor="" width="100%" cellspacing="0" cellpadding="0" id="trade_history_page" class="table_two" data-item-original-width="637" style="width: 100%;text-transform: uppercase;font-weight: bold;">
+									  	<thead>
+							                <tr style="background-color: rgb(38, 41, 43);">
+												<td width="28%" style="border: none;font-size: 10px;color: #c8c8c6;padding: 5px;">Size</td>
+												<td width="32%" style="border: none;font-size: 10px;color: #c8c8c6;padding: 5px;">Price</td>
+									  		</tr>
+									  	</thead>
+									</table>
+									</div>
+							  		<div style=" overflow-y: auto; width:100%; height:150px;">
+										<table border="0" bgcolor="" width="100%" cellspacing="0" cellpadding="10" id="trade_history_page" class="table_on">
+											<tbody>
+												<tr>
+													<td>0.05</td>
+													<td>14957.58320000</td>
+												</tr>
+												<tr>
+													<td>0.04</td>
+													<td>14954.80000000</td>
+												</tr>
+												<tr>
+													<td>0.27</td>
+													<td>14898.35200004</td>
+												</tr>
+												<tr>
+													<td>1.59</td>
+													<td>14898.35200003</td>
+												</tr>
+												<tr>
+													<td>0.57</td>
+													<td>14898.35200002</td>
+												</tr>
+												<tr>
+													<td>0.05</td>
+													<td>14898.35200000</td>
+												</tr>
+												<tr>
+													<td>0.04</td>
+													<td>14896.00000000</td>
+												</tr>
+												<tr>
+													<td>0.01</td><td>14893.49120000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14888.63040000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14883.76960000</td>
+												</tr>
+												<tr>
+													<td>0.02</td>
+													<td>14881.96416670</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14881.30000000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14878.90880000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14874.04800000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14869.18720000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14864.32640000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14864.04220000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14859.46560000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14857.78000001</td>
+												</tr>
+												<tr>
+													<td>0.02</td>
+													<td>14851.90000000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14849.74400000</td>
+												</tr>
+												<tr>
+													<td>0.16</td>
+													<td>14847.98000008</td>
+												</tr>
+												<tr>
+													<td>0.00</td>
+													<td>14847.98000002</td>
+												</tr>
+												<tr>
+													<td>5.75</td>
+													<td>14847.98000000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14847.00000000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14844.88320000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14840.02240000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14835.16160000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14830.30080000</td>
+												</tr>
+												<tr>
+													<td>1.50</td>
+													<td>14825.44000001</td>
+												</tr>
+												<tr>
+													<td>0.00</td>
+													<td>5000.00000000</td>
+												</tr>
+											</tbody>
+
+									</table>
+									</div>
+							        
+									</div>
+
+							        </div>
+
+							        <div style="width:49.5% !important;margin-left:1%;margin-bottom: 10px;" class="trdealsb trdealsbnew">
+							        <h1 class="sell">Sell&nbsp;Orders</h1>
+							        <div class="sellandbmain" style="height:auto; overflow:hidden;    clear: both;">
+										<div>
+											<table border="0" bgcolor="" width="100%" cellspacing="0" cellpadding="0" id="trade_history_page" class="table_two trdtab" data-item-original-width="637" style="width: 100%;background-color: rgb(38, 41, 43);color: #cccdcc;text-transform: uppercase;   font-weight: bold;">
+											  	<thead>
+												  	<tr style="background-color: rgb(38, 41, 43);">
+														<td width="32%" style="border: none;font-size: 10px;color: #c8c8c6;padding: 5px;"">Price</td>
+										    			<td width="28%" style="border: none;font-size: 10px;color: #c8c8c6;padding: 5px;"">Size</td>
+												  	</tr>
+											  	</thead>
+											</table>
+										</div>
+							  		<div style=" overflow-y: auto; float:left; width:100%; height:150px;">
+										<table border="0" bgcolor="" width="100%" cellspacing="0" cellpadding="10" id="trade_history_page" class="table_on">
+										  	<thead>									  
+										 	</thead>
+											<tbody>
+												<tr>
+													<td>15585.60000000</td>
+													<td>1.16</td>
+												</tr>
+												<tr>
+													<td>15606.00000000</td>
+													<td>0.24</td>
+												</tr>
+												<tr>
+													<td>15606.85680000</td>
+													<td>0.02</td>
+												</tr>
+												<tr>
+													<td>15606.88740000</td>
+													<td>0.02</td>
+												</tr>
+												<tr>
+													<td>15621.30000000</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15636.60000000</td>
+													<td>0.17</td>
+												</tr>
+												<tr>
+													<td>15646.80000000</td>
+													<td>0.26</td>
+												</tr>
+												<tr>
+													<td>15656.08200001</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15662.10000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15667.20000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15669.15840001</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15671.23104000</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15672.29999998</td>
+													<td>0.19</td>
+												</tr>
+												<tr>
+													<td>15672.30000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15672.49762501</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15676.38000000</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15677.31375606</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15677.39999993</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15677.40000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15682.50000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15687.60000000</td>
+													<td>0.02</td>
+												</tr>
+												<tr>
+													<td>15691.75140000</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15692.70000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15694.28100000</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15695.86710000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15697.64302187</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15697.80000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15698.38645920</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15701.00790000</td>
+													<td>0.01</td>
+												</tr>
+											</tbody>
+									</table>
+									</div>
+									</div>
+							        </div>
+							      </td>
+							  	</tr> 
+								</tbody>
+							</table>
+	  					</table>	  					
+					</div>
+				</div>
+				<div class="standard_text">
+					<div class="center-first">
+						<select>
+							<option>TEME/BTC</option>
+							<option>TTT/BTC</option>
+							<option>TTT/USD</option>
+							<option>TSOFT/BTC</option>
+							<option>TENTE/BTC</option>
+							<option>TEME/BTC</option>
+							<option>BTC/USD</option>
+							<option>ETH/BTC</option>
+							<option>BCC/BTC</option>
+							<option>XRP/BTC</option>
+							<option>DASH/BTC</option>
+							<option>NEO/BTC</option>
+							<option>XMR/BTC</option>
+							<option>XEM/BTC</option>
+							<option>ETC/BTC</option>
+							<option>LTC/BTC</option>
+							<option>LSK/BTC</option>
+							<option>DEVS/BTC</option>
+							<option>DEVS/USD</option>
+						</select>
+					</div>
+					<div class="center-sec">
+						<ul class="sec">
+							<li><i class="green">0.00003500 BTC(7.50%)</i></li>
+							<li><span>High </span> <i>0.00036500 BTC</i></li>
+							<li><span>Low </span> <i>0.00002000 BTC</i></li>
+						</ul>
+					</div>
+					<div class="center-third">
+						<div class="third-sub1">
+							<img src="https://bitotal.com/webtrader/public/upload/logo/201711181304561360.png">
+						</div>
+						<div class="third-sub2">
+							<p class="green">Name</p> Total Trading Technology<br>
+							<p class="green">Status</p> Active<br>
+							<p class="green">Release Date</p> 17 Nov 2010
+						</div>
+						<div class="third-sub3">
+							<p class="green">Website</p> <a href="http://Bitotal.com" style="float:none;">Bitotal.com</a>
+							<p class="green">Announcement</p> <a href="http://https://bitcointalk.org/index.php?topic=1971261.0" style="float:none;">https://bitcointalk.org/index.php?topic=1971261.0</a><br>
+							<p class="green">Twitter</p> <a href="http://twitter.com/tttcoin" style="float:none;">twitter.com/tttcoin</a>
+						</div>
+						<div class="third-sub4">
+							<p class="green">Total coins</p> 5.000.000<br>
+							<p class="green">Description</p> TTT is the cryptocurrencies Index that represent the price movements of Bitcoin and the 20 largest altcoins. The coin is conceived with the intention to create an indication of the whole cryptocurrencies market.<br>
+						</div>
+					</div>
+					<div class="center-fourth">
+						<br>
+						<div id="day-container" style="height: 400px; min-width: 310px"></div>
+						<br>
+					</div>
+					<div class="center-five">
+						<tbody>
+							<tr data-coinpair="btc_usd">
+								<td>
+							        <div style="width:49.5% !important;" class="trdealsb trdealsbnew">
+							        <h1 class="buy">Buy&nbsp;Orders</h1>
+							        <div class="sellandbmain" style="height:auto; overflow:hidden;    clear: both;">
+									<div>
+									<table border="0" bgcolor="" width="100%" cellspacing="0" cellpadding="0" id="trade_history_page" class="table_two" data-item-original-width="637" style="width: 100%;text-transform: uppercase;font-weight: bold;">
+									  	<thead>
+							                <tr style="background-color: rgb(38, 41, 43);">
+												<td width="50%" style="border: none;font-size: 16px;color: #c8c8c6;padding: 5px;padding-left: 15px;">Size</td>
+												<td width="50%" style="border: none;font-size: 16px;color: #c8c8c6;padding: 5px;">Price</td>
+									  		</tr>
+									  	</thead>
+									</table>
+									</div>
+							  		<div style=" overflow-y: auto; width:100%; height:150px;">
+										<table border="0" bgcolor="" width="100%" cellspacing="0" cellpadding="10" id="trade_history_page" class="table_oon">
+											<tbody>
+												<tr>
+													<td>0.05</td>
+													<td>14957.58320000</td>
+												</tr>
+												<tr>
+													<td>0.04</td>
+													<td>14954.80000000</td>
+												</tr>
+												<tr>
+													<td>0.27</td>
+													<td>14898.35200004</td>
+												</tr>
+												<tr>
+													<td>1.59</td>
+													<td>14898.35200003</td>
+												</tr>
+												<tr>
+													<td>0.57</td>
+													<td>14898.35200002</td>
+												</tr>
+												<tr>
+													<td>0.05</td>
+													<td>14898.35200000</td>
+												</tr>
+												<tr>
+													<td>0.04</td>
+													<td>14896.00000000</td>
+												</tr>
+												<tr>
+													<td>0.01</td><td>14893.49120000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14888.63040000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14883.76960000</td>
+												</tr>
+												<tr>
+													<td>0.02</td>
+													<td>14881.96416670</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14881.30000000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14878.90880000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14874.04800000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14869.18720000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14864.32640000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14864.04220000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14859.46560000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14857.78000001</td>
+												</tr>
+												<tr>
+													<td>0.02</td>
+													<td>14851.90000000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14849.74400000</td>
+												</tr>
+												<tr>
+													<td>0.16</td>
+													<td>14847.98000008</td>
+												</tr>
+												<tr>
+													<td>0.00</td>
+													<td>14847.98000002</td>
+												</tr>
+												<tr>
+													<td>5.75</td>
+													<td>14847.98000000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14847.00000000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14844.88320000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14840.02240000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14835.16160000</td>
+												</tr>
+												<tr>
+													<td>0.01</td>
+													<td>14830.30080000</td>
+												</tr>
+												<tr>
+													<td>1.50</td>
+													<td>14825.44000001</td>
+												</tr>
+												<tr>
+													<td>0.00</td>
+													<td>5000.00000000</td>
+												</tr>
+											</tbody>
+
+									</table>
+									</div>
+							        
+									</div>
+
+							        </div>
+
+							        <div style="width:49.5% !important;margin-left:1%;" class="trdealsb trdealsbnew">
+							        <h1 class="sell">Sell&nbsp;Orders</h1>
+							        <div class="sellandbmain" style="height:auto; overflow:hidden;    clear: both;">
+										<div>
+											<table border="0" bgcolor="" width="100%" cellspacing="0" cellpadding="0" id="trade_history_page" class="table_two trdtab" data-item-original-width="637" style="width: 100%;background-color: rgb(38, 41, 43);color: #cccdcc;text-transform: uppercase;   font-weight: bold;">
+											  	<thead>
+												  	<tr style="background-color: rgb(38, 41, 43);">
+														<td width="50%" style="border: none;font-size: 16px;color: #c8c8c6;padding: 5px;padding-left: 15px;">Price</td>
+										    			<td width="50%" style="border: none;font-size: 16px;color: #c8c8c6;padding: 5px;"">Size</td>
+												  	</tr>
+											  	</thead>
+											</table>
+										</div>
+							  		<div style=" overflow-y: auto; float:left; width:100%; height:150px;">
+										<table border="0" bgcolor="" width="100%" cellspacing="0" cellpadding="10" id="trade_history_page" class="table_oon">
+										  	<thead>									  
+										 	</thead>
+											<tbody>
+												<tr>
+													<td>15585.60000000</td>
+													<td>1.16</td>
+												</tr>
+												<tr>
+													<td>15606.00000000</td>
+													<td>0.24</td>
+												</tr>
+												<tr>
+													<td>15606.85680000</td>
+													<td>0.02</td>
+												</tr>
+												<tr>
+													<td>15606.88740000</td>
+													<td>0.02</td>
+												</tr>
+												<tr>
+													<td>15621.30000000</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15636.60000000</td>
+													<td>0.17</td>
+												</tr>
+												<tr>
+													<td>15646.80000000</td>
+													<td>0.26</td>
+												</tr>
+												<tr>
+													<td>15656.08200001</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15662.10000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15667.20000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15669.15840001</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15671.23104000</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15672.29999998</td>
+													<td>0.19</td>
+												</tr>
+												<tr>
+													<td>15672.30000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15672.49762501</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15676.38000000</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15677.31375606</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15677.39999993</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15677.40000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15682.50000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15687.60000000</td>
+													<td>0.02</td>
+												</tr>
+												<tr>
+													<td>15691.75140000</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15692.70000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15694.28100000</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15695.86710000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15697.64302187</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15697.80000000</td>
+													<td>0.01</td>
+												</tr>
+												<tr>
+													<td>15698.38645920</td>
+													<td>0.00</td>
+												</tr>
+												<tr>
+													<td>15701.00790000</td>
+													<td>0.01</td>
+												</tr>
+											</tbody>
+									</table>
+									</div>
+									</div>
+							        </div>
+							      </td>
+							  	</tr> 
+								</tbody>
+					</div>
+					<div class="center-six">
+						<div class="six-h1">
+							<h1>TRADE HISTORY</h1>
+						</div>
+						<div class="six-hh">
+							<table class="table-center">
+								<tr>
+									<th>Pair</th>
+									<th>Type</th>
+									<th>Price</th>
+									<th>Amount</th>
+									<th>Total</th>
+									<th>Date</th>
+								</tr>
+								<tbody>
+									<tr>
+										<td>XRP_BTC</td>
+										<td>BUY</td>
+										<td>0.00001561 BTC</td>
+										<td>991.37305519 XRP</td>
+										<td>0.01547533 BTC</td>
+										<td>09.12.2017 07:59</td>
+									</tr>
+									<tr>
+										<td>XRP_BTC</td>
+										<td>BUY</td>
+										<td>0.00001561 BTC</td>
+										<td>991.37305519 XRP</td>
+										<td>0.01547533 BTC</td>
+										<td>09.12.2017 07:59</td>
+									</tr>
+									<tr>
+										<td>XRP_BTC</td>
+										<td>BUY</td>
+										<td>0.00001561 BTC</td>
+										<td>991.37305519 XRP</td>
+										<td>0.01547533 BTC</td>
+										<td>09.12.2017 07:59</td>
+									</tr>
+									<tr>
+										<td>XRP_BTC</td>
+										<td>BUY</td>
+										<td>0.00001561 BTC</td>
+										<td>991.37305519 XRP</td>
+										<td>0.01547533 BTC</td>
+										<td>09.12.2017 07:59</td>
+									</tr>
+									<tr>
+										<td>XRP_BTC</td>
+										<td>BUY</td>
+										<td>0.00001561 BTC</td>
+										<td>991.37305519 XRP</td>
+										<td>0.01547533 BTC</td>
+										<td>09.12.2017 07:59</td>
+									</tr>
+									<tr>
+										<td>XRP_BTC</td>
+										<td>BUY</td>
+										<td>0.00001561 BTC</td>
+										<td>991.37305519 XRP</td>
+										<td>0.01547533 BTC</td>
+										<td>09.12.2017 07:59</td>
+									</tr>
+									<tr>
+										<td>XRP_BTC</td>
+										<td>BUY</td>
+										<td>0.00001561 BTC</td>
+										<td>991.37305519 XRP</td>
+										<td>0.01547533 BTC</td>
+										<td>09.12.2017 07:59</td>
+									</tr>
+									<tr>
+										<td>XRP_BTC</td>
+										<td>BUY</td>
+										<td>0.00001561 BTC</td>
+										<td>991.37305519 XRP</td>
+										<td>0.01547533 BTC</td>
+										<td>09.12.2017 07:59</td>
+									</tr>
+									<tr>
+										<td>XRP_BTC</td>
+										<td>BUY</td>
+										<td>0.00001561 BTC</td>
+										<td>991.37305519 XRP</td>
+										<td>0.01547533 BTC</td>
+										<td>09.12.2017 07:59</td>
+									</tr>
+									<tr>
+										<td>XRP_BTC</td>
+										<td>BUY</td>
+										<td>0.00001561 BTC</td>
+										<td>991.37305519 XRP</td>
+										<td>0.01547533 BTC</td>
+										<td>09.12.2017 07:59</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div style="background-color: #393c3d;width: 100%;height: 50px;"></div>
+					<div class="center-seven">
+						<div class="seven-tab">
+						  <button onclick="openCity('London')">ACTIVE ORDERS</button>
+						  <button onclick="openCity('Paris')">TRADE HISTORY</button>
+						  <button onclick="openCity('Tokyo')">ORDER HISTORY</button>
+						</div>
+						<div id="London" class="city">
+						  <table class="table-seven">
+								<tr>
+									<th>Pair</th>
+									<th>Amount(XRP)</th>
+									<th>Price</th>
+									<th>Total(BTC)</th>
+									<th>Date</th>
+									<th>Action</th>
+								</tr>
+							</table>
+						</div>
+
+						<div id="Paris" class="w3-container city" style="display:none">
+						  <table class="table-center">
+								<tr>
+									<th>Pair</th>
+									<th>Type</th>
+									<th>Price</th>
+									<th>Amount</th>
+									<th>Total</th>
+									<th>Date</th>
+								</tr>
+								<tbody>
+									<tr style="text-align: center;">
+										<td colspan="6">There are no orders</td>
+									</tr>
+								</tbody>
+							</table> 
+						</div>
+
+						<div id="Tokyo" class="w3-container city" style="display:none">
+							<table class="table-center">
+								<tr>
+									<td colspan="2">
+										Pair: <select class="seven-select">
+											<option>TEME/BTC</option>
+											<option>TTT/BTC</option>
+											<option>TTT/USD</option>
+											<option>TSOFT/BTC</option>
+											<option>TENTE/BTC</option>
+											<option>TEME/BTC</option>
+											<option>BTC/USD</option>
+											<option>ETH/BTC</option>
+											<option>BCC/BTC</option>
+											<option>XRP/BTC</option>
+											<option>DASH/BTC</option>
+											<option>NEO/BTC</option>
+											<option>XMR/BTC</option>
+											<option>XEM/BTC</option>
+											<option>ETC/BTC</option>
+											<option>LTC/BTC</option>
+											<option>LSK/BTC</option>
+											<option>DEVS/BTC</option>
+											<option>DEVS/USD</option>
+										</select>
+									</td>
+									<td colspan="3">
+										Type: <select class="seven-select"> 
+											<option>All</option>
+											<option>Sell</option>
+											<option>Buy</option>
+										</select>
+									</td>
+									<td colspan="2">
+										Show: <select class="seven-select"> 
+											<option>All</option>
+											<option>Active</option>
+											<option>Filld</option>
+											<option>Partly filled</option>
+											<option>canceled</option>
+										</select>
+									</td>
+								</tr>
+							</table>
+						  	<table class="table-center">
+								<tr>
+									<th>Pair</th>
+									<th>Type</th>
+									<th>Original Price</th>
+									<th>Amount</th>
+									<th>Complete%</th>
+									<th>Total</th>
+									<th>Date</th>
+								</tr>
+								<tbody>
+									<tr style="text-align: center;">
+										<td colspan="7">There are no orders</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="center-extra"></div>
+				</div>
+				<div class="standard_image">
+					<div class="stand-right">
+						<div class="r1">
+							<p>0.00000000 BTC</p>
+						</div>
+						<div class="r2">
+							<p>0.00000000 BTC</p>
+						</div>
+					</div>
+					<div class="stand-right1">
+						<h1>0.00001601 BTC</h1>
+					</div>
+					<div class="stand-right1">
+						<h2>Bid :0.00001605 BTC</h2>
+						<h2>Ask :0.00001673 BTC</h2>
+					</div>
+					<div class="stand-right2">
+						<div>
+							<div class="s-button">
+							  <button class="active" onclick="City('Left')">BUY</button>
+							  <button onclick="City('Right')">SELL</button>
+							</div>
+							<div id="Left" class="rightside s-r">
+							  <h2>Amount</h2>
+							  <input type="text" name="name" placeholder="0.00000000">
+							  <h2>Price</h2>
+							  <input type="text" name="name1" placeholder="0.00000000">
+							  <p>0.00000000 BTC</p>
+							  <a href="#">Buy XRP</a>
+							</div>
+							<div id="Right" class="rightside s-r" style="display:none">
+							  <h2>Amount</h2>
+							  <input type="text" name="name" placeholder="0.00000000">
+							  <h2>Price</h2>
+							  <input type="text" name="name1" placeholder="0.00000000">
+							  <p>0.00000000 BTC</p>
+							  <a href="#">Buy XRP</a>
+							  <br>
+							  <h4></h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<script>
+			$(document).ready(function($) {
+					$('.banner').slick({
+							slidesToShow: 1,
+							slidesToScroll: 1,
+							dots: true,
+					});
+					$('.testimonials-slider').slick({
+						slidesToShow: 3,
+						slidesToScroll: 1,
+						dots: false,
+						slidesToShow: 3,
+						slidesToScroll: 1,
+						 responsive: [
+						  {
+						    breakpoint: 768,
+						    settings: {
+						      slidesToShow: 2,
+						      slidesToScroll: 1,
+						     }
+						    },
+						    {
+						     breakpoint: 640,
+						    settings: {
+						      slidesToShow: 1,
+						      slidesToScroll: 1
+						     }
+						 }
+						    ]
+					});
+			});
+			$(document).ready(function(){
+				$(".maindiv").click(function(){
+					$(".menu ul").slideToggle();
+				});
+				$(".maindiv").on("click",function(){
+					$(".maindiv").toggleClass("active");
+				});
+			});
+		</script>
+		<script>
+		$(document).ready(function(){
+		    $(function(){
+		        $("#main-tab5").hide();
+		        $("#main-tab4").hide();
+		        $("#main-tab2").hide();
+		        $("#main-tab1").hide();
+		        $("#main-tab6").hide();
+		        $("#main-tab7").hide();
+		        $("#main-tab8").hide();
+		        $("#main-tab9").hide();
+		        $("#main-tab10").hide();
+		        $("#main-tab11").hide();
+		        $("#main-tab12").hide();
+		    });
+		    $(".table5").click(function(){
+		        $("#main-tab5").show();
+		    });
+		    $(".table6").click(function(){
+		        $("#main-tab6").show();
+		    });
+		    $(".table4").click(function(){
+		        $("#main-tab4").show();
+		    });
+		    $(".table3").click(function(){
+		        $("#main-tab3").show();
+		    });
+		    $(".table2").click(function(){
+		        $("#main-tab2").show();
+		    });
+		    $(".table1").click(function(){
+		        $("#main-tab1").show();
+		    });
+		    $(".table7").click(function(){
+		        $("#main-tab7").show();
+		    });
+		    $(".table8").click(function(){
+		        $("#main-tab8").show();
+		    });
+		    $(".table9").click(function(){
+		        $("#main-tab9").show();
+		    });
+		    $(".table10").click(function(){
+		        $("#main-tab10").show();
+		    });
+		    $(".table11").click(function(){
+		        $("#main-tab11").show();
+		    });
+		    $(".table12").click(function(){
+		        $("#main-tab12").show();
+		    });
+		});
+		</script>
+		<script>
+			function openCity(cityName) {
+			    var i;
+			    var x = document.getElementsByClassName("city");
+			    for (i = 0; i < x.length; i++) {
+			       x[i].style.display = "none";  
+			    }
+			    document.getElementById(cityName).style.display = "block";  
+			}
+			function City(cityName) {
+			    var i;
+			    var x = document.getElementsByClassName("rightside");
+			    for (i = 0; i < x.length; i++) {
+			       x[i].style.display = "none";  
+			    }
+			    document.getElementById(cityName).style.display = "block";  
+			}
+			</script>
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<script src="https://code.highcharts.com/stock/highstock.js"></script>
+		<script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
+	</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Account | Bitcoin</title>
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
+		<script src="slick/jquery-1.11.3.min.js"></script>
+		<script src="slick/slick.js"></script>
+		<script src="js/main.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="head_bar">
+				<div class="containe">
+					<div class="logo">
+						<a href="#"><h2><img src="images/logo.png"></h2></a>
+					</div>
+					<div class="menu">
+						<div class="maindiv">
+							<div class="hamburger">								
+							</div>
+						</div>	
+						<ul>							
+							<li><a href="index.html">Trade</a></li>
+							<li class="dropdown"><a class="dropbtn" href="funds.html">Funds</a>
+								<div class="dropdown-content">
+								    <a href="funds.html">Deposit & Withdraw</a>
+								    <a href="withdraw.html">Withdraw history</a>
+								</div>
+							</li>
+							<li class="dropdown"><a class="dropbtn" href="orders.html">Orders</a>
+								<div class="dropdown-content">
+								    <a href="orders.html">Open Orders</a>
+								    <a href="tradehistory.html">Trade history</a>
+								</div>
+							</li>
+							<li class="dropdown"><a class="dropbtn" href="account.html">Account</a>
+								<div class="dropdown-content">
+								    <a href="editprofile.html">Edit profile</a>
+								    <a href="docs.html">Verify account</a>
+								    <a href="changepassword.html">Change password</a>
+								    <a href="apikeys.html">Api keys</a>
+								</div>
+							</li>
+							<li><a id="searchbychar" href="#">User</a></li>
+							<li><a id="log-out" href="#">Logout</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section>
+			<div class="standard">				
+				<div class="standard_text1">
+					<div class="acc-extra"></div>
+					<div class="acc">
+						<h2>Account Information</h2>
+					</div>
+					<div class="acc1">
+						<div class="acc1-sub1">
+							<img src="images/per.jpg">
+						</div>
+						<div class="acc1-sub2">
+							<p>
+								<label>User:</label>
+								<i>Jack</i>
+							</p>
+							<p>
+								<label>Group:</label>
+								<i>User</i>
+							</p>
+							<p>
+								<label>E-mail:</label>
+								<i>admin@abc.com</i>
+							</p>
+							<p>
+								<label>Country:</label>
+								<i><sky>-</sky></i>
+							</p>
+							<p>
+								<label>Last action:</label>
+								<i>2017-12-08 19:13:30</i>
+							</p>
+						</div>
+					</div>
+					<div class="acc-extra"></div>					
+				</div>
+				<div class="standard_image2">
+					<div class="account-right">
+						<div class="stand-order">
+							<a href="funds.html">Funds</a>
+						</div>
+						<div class="stand-order">
+							<a href="editprofile.html">Edits</a>
+						</div>
+						<div class="stand-order">
+							<a href="tradehistory.html">Trade History</a>
+						</div>
+						<div class="stand-order">
+							<a href="orders.html">Orders History</a>
+						</div>
+						<div class="stand-order">
+							<a href="withdraw.html">Withdraw History</a>
+						</div>
+						<div class="stand-order">
+							<a href="apikeys.html">API Keys</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<script>
+			$(document).ready(function($) {
+					$('.banner').slick({
+							slidesToShow: 1,
+							slidesToScroll: 1,
+							dots: true,
+					});
+					$('.testimonials-slider').slick({
+						slidesToShow: 3,
+						slidesToScroll: 1,
+						dots: false,
+						slidesToShow: 3,
+						slidesToScroll: 1,
+						 responsive: [
+						  {
+						    breakpoint: 768,
+						    settings: {
+						      slidesToShow: 2,
+						      slidesToScroll: 1,
+						     }
+						    },
+						    {
+						     breakpoint: 640,
+						    settings: {
+						      slidesToShow: 1,
+						      slidesToScroll: 1
+						     }
+						 }
+						    ]
+					});
+			});
+			$(document).ready(function(){
+				$(".maindiv").click(function(){
+					$(".menu ul").slideToggle();
+				});
+				$(".maindiv").on("click",function(){
+					$(".maindiv").toggleClass("active");
+				});
+			});
+		</script>
+		<script>
+			function City(cityName) {
+			    var i;
+			    var x = document.getElementsByClassName("rightside");
+			    for (i = 0; i < x.length; i++) {
+			       x[i].style.display = "none";  
+			    }
+			    document.getElementById(cityName).style.display = "block";  
+			}
+			</script>
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<script src="https://code.highcharts.com/stock/highstock.js"></script>
+		<script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
+	</body>
+</html>
